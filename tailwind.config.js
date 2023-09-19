@@ -10,7 +10,8 @@ module.exports = {
       },
       fontFamily: {
         lato: ['Lato'],
-        roboto: ['Roboto+Slab']
+        roboto: ['Roboto+Slab'],
+        ubuntu: ['Ubuntu'],
       }
     },
   },
