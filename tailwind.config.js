@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xsm: "380px"
+      },
       fontFamily: {
         lato: ['Lato'],
         roboto: ['Roboto+Slab']
