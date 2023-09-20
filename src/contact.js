@@ -1,18 +1,19 @@
 export default function Contact() {
     return (
-    <div className="flex flex-col bg-black h-screen">
+      <div className="flex flex-col bg-black xsm:h-full xl:h-screen">
       <div className="flex flex-row items-center w-full h-20 bg-black fixed">
-        <div className="flex flex-row justify-between items-center w-full h-16 m-32">
-          <div className="mt-10">
+        <div className="flex flex-row justify-between items-center w-full h-16 xl:m-32 m-6">
+          <div className="">
             <span className="text-white font-bold text-xl font-lato">
-              Evan's Portfolio
+              Evan Darren Christanto
             </span>
           </div>
-          <div className="space-x-24 font-bold flex flex-row mt-10">
+          <div className="xl:space-x-20  flex flex-row font-bold space-x-5">
             
-              <a href="/" className="text-white text-xl">
-                Home
-              </a>
+                <a href="/" className="text-white text-xl">
+                    Home
+                </a>
+
             <div className="flex flex-col">
                 <a href="/contact" className="text-white text-xl">
                     Contact Me
@@ -22,6 +23,10 @@ export default function Contact() {
                 </div>
             </div>
             
+            <button className="text-white text-xl border-2 border-white border-solid rounded-lg hover:bg-white hover:text-black hover:border-black">
+              <text className="p-4 p
+              y-2">My Resume</text>
+            </button>
           </div>
         </div>
       </div>
