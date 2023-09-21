@@ -4,6 +4,7 @@ import planes from "./plane.jpeg";
 import tiktoks from "./tiktokun.jpeg";
 import splitrrs from "./splitrr.jpeg";
 import customers from "./customer.jpeg";
+import vegetable from "./vegetables.webp";
 import { Github, ExternalLink, Linkedin, InstagramIcon } from "lucide-react";
 
 export default function Main() {
@@ -38,29 +39,35 @@ export default function Main() {
       link: "https://github.com/EvanCh08/Bus-API",
       desc: "Bus API is a project done when I took CS2030, Programming Methodology II. I used CompletableFuture and functional programming to solve this project. In the end theh project functions by calling a destination from one to another and the program will display the possible bs routes that the customers can take.",
     },
+    {
+      name: "Eating Habit Analysis",
+      photo: vegetable,
+      link: "https://sites.google.com/view/evaneatinghabit?usp=sharing",
+      desc: "During my summer holiday, I did this project about eating habit anaysis, whereby I analyzed my eating habit in a 5-day window. After further analysis through charts, graphs, and the amount of nutrients I got, I made a conclusion that I must fix my eating habit.",
+    },
   ];
   return (
     <div className="flex flex-col bg-black xsm:h-full xl:w-full h-full">
-      <div className="flex flex-row items-center w-full h-20 bg-black/40 fixed">
+      <div className="flex flex-row items-center w-full h-20 bg-zinc-950/80 fixed">
         <div className="flex flex-row justify-between items-center w-full h-16 xl:m-32 m-6">
           <div className="">
-            <span className="text-white font-bold text-xl font-lato">
+            <span className="text-white/90 text-xl font-lato">
               Evan Darren Christanto
             </span>
           </div>
-          <div className="xl:space-x-20 flex flex-row font-bold space-x-5 items-center">
+          <div className="xl:space-x-20 flex flex-row space-x-5 items-center">
             <div className="flex flex-col">
               <a href="/" className="text-white text-xl">
                 Home
               </a>
-              <div className="bg-white rounded-xl h-1"></div>
+              <div className="bg-white rounded-xl h-[2px]"></div>
             </div>
-            <a href="/contact" className="text-white text-xl">
+            <a href="/contact" className="text-white/90 text-xl">
               Contact Me
             </a>
             <a
               href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing"
-              className="text-white flex justify-center text-xl border-2 border-white border-solid rounded-lg hover:bg-white hover:text-black hover:border-black h-10"
+              className="text-white/90 flex justify-center text-xl border-white/90 border-solid rounded-lg hover:bg-white hover:text-black hover:border-black h-10"
             >
               <text className=" px-3 py-1">My Resume</text>
             </a>
@@ -69,15 +76,15 @@ export default function Main() {
       </div>
       <div className="xl:my-4 mt-[100px] m-5">
         <div className=" xl:flex-row xl:mt-32 my-20 xl:grid grid-cols-2 xsm: flex flex-col xsm: m-5 ">
-          <div className="self-center mx-auto bg-white">
+          <div className="self-center mx-auto">
             <img
               className="rounded-full xsm:w-[360px] xsm:h-[360px] xl:h-[515px] xl:w-[525px]"
               src={gans}
               alt="profile"
             />
           </div>
-          <div className="xsm:mt-10 xl:self-center text-white flex flex-col xl:">
-            <text className="text-white text-2xl font-bold">
+          <div className="xsm:mt-10 xl:self-center text-white/90 flex flex-col xl:">
+            <text className=" text-2xl font-bold">
               Hello, there! I am
             </text>
             <text className="text-6xl font-bold ">Evan Darren Christanto</text>
@@ -92,7 +99,7 @@ export default function Main() {
             </text>
             <a
               href="/contact"
-              className="flex justify-center items-center text-white text-xl border-2 border-white border-solid rounded-lg hover:bg-white hover:text-black hover:black w-40 mt-4 h-12"
+              className="flex justify-center items-center text-white/90 text-xl border-2 border-white/90 border-solid rounded-lg hover:bg-white hover:text-black hover:black w-40 mt-4 h-12"
             >
               <text className="font-bold px-5 text-center">Contact Me</text>
             </a>
@@ -100,13 +107,13 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-1 xsm: m-5 mt-10"></div>
+      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 mt-10"></div>
       <div className="grid xl:grid-cols-2 font-ubuntu xsm:m-5">
         <div className="xl:mx-[107px] w-[580px] text-justify my-auto xl:m-0 xsm: m-5 flex flex-col mt-10">
-          <text className="text-white font-bold text-4xl xl:my-5 xsm: my-4 font-ubuntu">
+          <text className="text-white/90 font-bold text-4xl xl:my-5 xsm: my-4 font-ubuntu">
             About me
           </text>
-          <text className="text-white mt-5 font-bold text-2xl">My Skills</text>
+          <text className="text-white/90 mt-5 font-bold text-2xl">My Skills</text>
           <p className="text-white mt-5 text-lg font-ubuntu text-opacity-80">
             In terms of technical skills, I excel in frontend and backend
             development with tech stacks include React JS, React Native, HTML,
@@ -115,7 +122,7 @@ export default function Main() {
             many others.
           </p>
 
-          <text className="text-white mt-5 font-bold text-2xl font-ubuntu">
+          <text className="text-white/90 mt-5 font-bold text-2xl font-ubuntu">
             Life Values
           </text>
           <p className="text-white mt-5 text-lg font-ubuntu text-opacity-80">
@@ -124,26 +131,26 @@ export default function Main() {
             for them, and become meaningful.
           </p>
         </div>
-        <div className="flex flex-col my-auto">
+        <div className="flex flex-col my-auto text-white/90">
           <div className="flex flex-row font-bold font-ubuntu text-6xl mx-[70px]">
-            <text className="text-white">"</text>
-            <text className="text-white text-6xl font-bold font-ubuntu ">
+            <text className="">"</text>
+            <text className="text-white/90 text-6xl font-bold font-ubuntu ">
               I can do all things
             </text>
           </div>
-          <text className="text-white text-6xl font-bold font-ubuntu  mx-24">
+          <text className=" text-6xl font-bold font-ubuntu  mx-24">
             through Christ
           </text>
-          <text className="text-white text-6xl font-bold font-ubuntu  mx-24">
+          <text className=" text-6xl font-bold font-ubuntu  mx-24">
             strengthens me."
           </text>
         </div>
       </div>
-      <text className="text-white font-bold text-4xl xl:my-10 xsm: my-4 xl: mx-32 font-ubuntu">
+      <text className="text-white/90 font-bold text-4xl xl:my-10 xsm: my-4 xl: mx-32 font-ubuntu">
         My Experience
       </text>
       <div className="flex flex-col text-white font-bolf font-ubuntu mx-32">
-        <text className="text-2xl">NUSSU CommIT Technical Team Member</text>
+        <text className="text-2xl text-white/90 font-bold">NUSSU CommIT Technical Team Member</text>
         <div className="grid grid-cols-2">
           <div className="flex flex-col w-[580px]">
             <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80">
@@ -165,7 +172,7 @@ export default function Main() {
             alt="ya maap"
           />
           <div className="flex flex-col w-[628px]">
-            <text className="text-2xl my-5 font-bold">
+            <text className="text-2xl my-5 text-white/90 font-bold">
               NUANSA Set and Props Co-Director
             </text>
             <p className="text-white text-lg font-ubuntu text-justify text-opacity-80">
@@ -188,8 +195,8 @@ export default function Main() {
 
         <div className="grid grid-cols-2 my-3">
           <div className="flex flex-col w-[580px]">
-            <text className="text-2xl my-5">
-              Data Analyst Internship at PT Catur Kimiatama Agung
+            <text className="text-2xl my-5 text-white/90 font-bold">
+              Data Analyst Internship
             </text>
             <p className="text-white text-lg font-ubuntu text-justify text-opacity-80">
               During summer, I did my very first internship in Indonesia which
@@ -214,7 +221,7 @@ export default function Main() {
           />
         </div>
       </div>
-      <text className="text-white font-bold text-3xl xl:my-10 xsm: my-4 xl: mx-32 font-ubuntu">
+      <text className="text-white/90 font-bold text-3xl xl:my-10 xsm: my-4 xl: mx-32 font-ubuntu">
         My Projects
       </text>
       <div className="xl:grid grid-cols-3 xl:gap-7 xsm:flex flex-col m-5 items-center mx-32">
