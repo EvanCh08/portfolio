@@ -8,7 +8,7 @@ export default function Contact() {
               Evan Darren Christanto
             </span>
           </div>
-          <div className="xl:space-x-20  flex flex-row font-bold space-x-5">
+          <div className="xl:space-x-20 flex flex-row font-bold space-x-5 items-center">
             
                 <a href="/" className="text-white text-xl">
                     Home
@@ -23,10 +23,12 @@ export default function Contact() {
                 </div>
             </div>
             
-            <button className="text-white text-xl border-2 border-white border-solid rounded-lg hover:bg-white hover:text-black hover:border-black">
-              <text className="p-4 p
-              y-2">My Resume</text>
-            </button>
+            <a
+              href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing"
+              className="text-white flex justify-center text-xl border-2 border-white border-solid rounded-lg hover:bg-white hover:text-black hover:border-black h-10"
+            >
+              <text className=" px-3 py-1">My Resume</text>
+            </a>
           </div>
         </div>
       </div>
