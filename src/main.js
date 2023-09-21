@@ -5,6 +5,9 @@ import tiktoks from "./tiktokun.jpeg";
 import splitrrs from "./splitrr.jpeg";
 import customers from "./customer.jpeg";
 import vegetable from "./vegetables.webp";
+import nuansas from "./nuansa.jpeg";
+import bigdatas from "./bigdata.webp";
+import commits from "./commit.jpeg";
 import { Github, ExternalLink, Linkedin, InstagramIcon } from "lucide-react";
 
 export default function Main() {
@@ -162,12 +165,12 @@ export default function Main() {
               experiences here in NUSSU CommIT!{" "}
             </p>
           </div>
-          <img src={gans} className="w-[640px] mt-7 rounded-lg" alt="ya maap" />
+          <img src={commits} className="w-[640px] mt-7 rounded-lg" alt="ya maap" />
         </div>
 
         <div className="grid grid-cols-2 my-3">
           <img
-            src={gans}
+            src={nuansas}
             className="w-[580px] mt-20 rounded-lg"
             alt="ya maap"
           />
@@ -215,7 +218,7 @@ export default function Main() {
             </p>
           </div>
           <img
-            src={gans}
+            src={bigdatas}
             className="w-[615px] rounded-lg mt-20 ml-3"
             alt="ya maap"
           />

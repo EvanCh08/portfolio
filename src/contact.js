@@ -48,30 +48,35 @@ export default function Contact() {
         
       </div>
 
-      <div className="mt-32 mx-32">
+      <div className="mt-[200px] mx-32">
         <text className="text-white font-bold text-4xl xl:my-5 xsm: my-4 font-ubuntu">
               Contact Me
         </text>
       </div>
-      
-      <div className= "border-2 border-white/75 flex flex-col mx-32 mt-5 h-[350px] w-[500px] rounded-xl">
-        <form ref={form} onSubmit={sendEmail} className="flex flex-col my-auto m-5 ">
-          <div className="flex flex-col">
-            <label className=" text-white font-bold font-ubuntu text-lg">Name</label>
-            <input placeholder="Name" className="w-full h-9 rounded-md px-2 bg-white" type="text" name="name"/>
+      <div className="flex flex-row">
+        <div className= "border-2 border-white/85 flex flex-col ml-32 mt-5 h-[400px] w-[550px] rounded-xl">
+          <form ref={form} onSubmit={sendEmail} className="flex flex-col my-auto m-5 ">
+            <div className="flex flex-col">
+              <label className=" text-white/75 font-bold font-ubuntu text-lg">Full Name</label>
+              <input placeholder="Full Name" className="w-full h-9 rounded-md px-2 border-2 border-white/75 bg-black text-white" type="text" name="name"/>
 
-          </div>
-          <div className="flex flex-col my-3">
-            <label className="text-white font-bold font-ubuntu">Email</label>
-            <input  placeholder="Email" className="w-full h-9 rounded-md px-2" type="email" name="user_email"/>
-          </div>
-          
+            </div>
+            <div className="flex flex-col my-3">
+              <label className="text-white/75 font-bold font-ubuntu text-lg">Email</label>
+              <input  placeholder="Email" className="w-full h-9 rounded-md px-2 border-2 border-white/75 bg-black text-white" type="email" name="user_email"/>
+            </div>
 
-          <label className="text-white font-bold font-ubuntu ">Message</label>
-          <textarea placeholder="Message from me to Evan is..."  name='message' className="rounded-md px-2 py-1"rows='4'/>
-          <input type='submit' className="w-full h-9 rounded-md" value='send'/>
-        </form>
+            <label className="text-white/75 font-bold font-ubuntu text-lg">Message</label>
+            <textarea placeholder="Message from me to Evan is..."  name='message' className="rounded-md px-2 py-1 border-2 border-white/75 bg-black text-white"rows='4'/>
+            <input type='submit' className="w-full h-9 hover:bg-white hover:text-black rounded-xl border-2 border-white/75 text-white mt-5 font-bold font-ubuntu" value='Send My Email!'/>
+          </form>
+        </div>
+        <div className="bg-white h-[400px] w-1 mt-5 mx-[95px]"><text></text></div>
+        <div className="text-white font-bold font-ubuntu flex flex-col w-[500px] my-auto">
+          <p className="text-justify text-2xl">Are you interested more about my skills and experiences more? Wondering how I can reach you? Please do not hesitate to contact me by inserting your full name, email, and messages that you would like to send me. </p>
+        </div>
       </div>
+      
       
     </div>
   );
