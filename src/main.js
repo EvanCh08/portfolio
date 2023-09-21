@@ -14,7 +14,7 @@ export default function Main() {
     {
       name: "Splitrr",
       link: "https://github.com/EvanCh08/SS2AM-Orbital-Project",
-      desc: "In this project, I performed as a frontend and backenc codeveloper, along side with my partner. Some features we have are login sign up page, splitbill page, and register menu page for restaurants.",
+      desc: "In this project, I performed as a frontend and backend codeveloper. Some features we have are login sign up page, splitbill page, and register menu page for restaurants. Ouor main objective is to help restaurants and customers in terms of splibill.",
     },
     {
       name: "Tiktok Hackathon",
@@ -90,7 +90,7 @@ export default function Main() {
 
       <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-1 xsm: m-5 mt-10"></div>
       <div className="grid xl:grid-cols-2 font-ubuntu xsm:m-5">
-        <div className="xl:mx-28 my-auto xl:m-0 xsm: m-5 flex flex-col mt-10">
+        <div className="xl:mx-[107px] w-[580px] text-justify my-auto xl:m-0 xsm: m-5 flex flex-col mt-10">
           <text className="text-white font-bold text-4xl xl:my-5 xsm: my-4 font-ubuntu">
             About me
           </text>
@@ -127,62 +127,111 @@ export default function Main() {
           </text>
         </div>
       </div>
-      <text className="text-white font-bold text-3xl xl:my-10 xsm: my-4 xl: mx-32 font-ubuntu">
+      <text className="text-white font-bold text-4xl xl:my-10 xsm: my-4 xl: mx-32 font-ubuntu">
         My Experience
       </text>
       <div className="flex flex-col text-white font-bolf font-ubuntu mx-32">
-        <text className="text-2xl">NUANSA Set and Props Co-Director</text>
-        <div className="flex flex-row">
-          <div className="flex flex-col">
-            <p className="text-white mt-5 text-lg font-ubuntu">
-              NUANSA is a Indonesian drama musical theater in NUS. Before the
-              covid period, they had always been holding events in their{" "}
+        <text className="text-2xl">NUSSU CommIT Technical Team Member</text>
+        <div className="grid grid-cols-2">
+          <div className="flex flex-col w-[580px]">
+            <p className="text-white mt-5 text-lg font-ubuntu text-justify">
+              I just entered NUSSU CommIT Technical Team Member in September,
+              2023. I performed here as an experienced frontend developer that
+              is tasked to design NUSSU websites. We also have workshops every
+              week conducted for junior developers that includes bakcend and
+              frontend engineer, that is . I am looking forward to many more
+              experiences here in NUSSU CommIT!{" "}
             </p>
           </div>
-          <img src={gans} className="w-[500px] mt-7" alt="ya maap" />
+          <img src={gans} className="w-[640px] mt-7 rounded-lg" alt="ya maap" />
         </div>
-        <div className="flex flex-row">
-          <img />
-          <p></p>
+
+        <div className="grid grid-cols-2 my-3">
+          <img
+            src={gans}
+            className="w-[580px] mt-20 rounded-lg"
+            alt="ya maap"
+          />
+          <div className="flex flex-col w-[628px]">
+            <text className="text-2xl my-5 font-bold">
+              NUANSA Set and Props Co-Director
+            </text>
+            <p className="text-white text-lg font-ubuntu text-justify">
+              NUANSA is an esteemed Indonesian drama musical theater production
+              at the National University of Singapore (NUS). Before the COVID19
+              Pandemic, NUANSA had always been operating in the University
+              Cultural Centre (NUS). I took charge of decision-making processes
+              for meetings, leading these crucial gatherings, and actively
+              organizing the committee. My skills are tested by being
+              responsible for determining the property sets and prices.
+              Including where to buy them and what are their dimensions. This
+              required me to run through the script and took note of the
+              properties that are needed in a particular scenario. In addition
+              to that, I also made friends and built networks with fellow
+              friends. I am very excited to work with them and build a strong
+              relationship. I believe that the event will run smoothly.{" "}
+            </p>
+          </div>
         </div>
-        <div className="flex flex-row">
-          <p></p>
-          <img />
+
+        <div className="grid grid-cols-2 my-3">
+          <div className="flex flex-col w-[580px]">
+            <text className="text-2xl my-5">
+              Data Analyst Internship at PT Catur Kimiatama Agung
+            </text>
+            <p className="text-white text-lg font-ubuntu text-justify">
+              During summer, I did my very first internship in Indonesia which
+              is in PT Catur Kimiatama Agung. It is a company that operates with
+              paint and powders I had an incredible experience of talking to my
+              supervisor of my internship. I first made the report on my own, by
+              seeing the sales company data from an excel sheet. I observed many
+              things and learned that factors on how a company operates can
+              vary. After that, I collaborated with my supervisor and seek for
+              his advices on my insights. I improved the report that I have made
+              earlier and submitted it to the supervisor, to be presented to the
+              upper managers. However, I got a one of a lifetime chance to
+              present myself and my findings in front of my manager at the last
+              weeks of my internship. I had my utmost experience here, due to
+              the work environment.{" "}
+            </p>
+          </div>
+          <img src={gans} className="w-[615px] rounded-lg mt-20 ml-3" alt="ya maap" />
         </div>
       </div>
       <text className="text-white font-bold text-3xl xl:my-10 xsm: my-4 xl: mx-32 font-ubuntu">
         My Projects
       </text>
       <div className="xl:grid grid-cols-3 xl:gap-7 xsm:flex flex-col m-5 items-center mx-32">
-        {data.map((product, index) => (
-          <div
-            className=" bg-white text-black transition ease-in-out delay-175 hover:bg-violet-800 hover:text-white hover:-translate-y-1 hover:scale-110 font-ubuntu h-[450px] self-center rounded-lg"
-            key={index}
-          >
-            <div>
-              <img
-                className="h- w-full rounded-t-lg"
-                src={gans}
-                alt="turu deck"
-              />
-            </div>
-            <p className="mx-5 mt-2 text-justify">{product.desc}</p>
-            <div className="xl: flex flex-row xl:justify-between self-end m-5 xl:items-center  ">
-              <text className="text-lg font-bold">{product.name}</text>
-              <div className="flex flex-row items-center">
-                <a
-                  href={product.link}
-                  alt="product"
-                  className="flex flex-row items-center"
-                >
-                  <ExternalLink className="h-4" />
-                  <text className="text-sm">Visit Website!</text>
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
+  {data.map((product, index) => (
+    <div
+      className="bg-white text-black transition ease-in-out delay-175 hover:bg-violet-800 hover:text-white hover:-translate-y-1 hover:scale-110 font-ubuntu h-[500px] self-center rounded-lg flex flex-col"
+      key={index}
+    >
+      <div>
+        <img
+          className="h- w-full rounded-t-lg"
+          src={gans}
+          alt="turu deck"
+        />
       </div>
+      <p className="mx-5 mt-2 text-justify">{product.desc}</p>
+      
+      <div className="flex-grow"></div>
+
+      <div className="flex flex-row justify-between items-center mx-5 mb-3">
+        <text className="text-lg font-bold">{product.name}</text>
+        <a
+          href={product.link}
+          alt="product"
+          className="flex flex-row items-center"
+        >
+          <ExternalLink className="h-4" />
+          <span className="text-sm ml-2">Visit Website!</span>
+        </a>
+      </div>
+    </div>
+  ))}
+</div>
     </div>
   );
 }
