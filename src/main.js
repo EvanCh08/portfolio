@@ -4,7 +4,6 @@ import planes from "./plane.jpeg";
 import tiktoks from "./tiktokun.jpeg";
 import splitrrs from "./splitrr.jpeg";
 import customers from "./customer.jpeg";
-import { useNavigate } from "react-router-dom";
 import { Github, ExternalLink, Linkedin, InstagramIcon } from "lucide-react";
 
 export default function Main() {
@@ -251,22 +250,23 @@ export default function Main() {
           </div>
         ))}
       </div>
-      
+
       <div className="mx-32 my-3">
-          <text className="text-white flex justify-center font-ubuntu font-bold text-2xl">Social</text>
+        <text className="text-white flex justify-center font-ubuntu font-bold text-2xl">
+          Social
+        </text>
       </div>
       <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-1 xsm: m-5"></div>
       <div className="flex flex-row justify-center space-x-5">
-          <a href="https://github.com/EvanCh08"> 
-            <Github color="white" />
-          </a>
-          <a href="https://www.linkedin.com/in/evan-darren-christanto-675b33251/"> 
-            <Linkedin color="white" />
-          </a>
-          <a href="https://www.instagram.com/evan__darren/"> 
-            <InstagramIcon color="white" />
-          </a>
-          
+        <a href="https://github.com/EvanCh08">
+          <Github color="white" />
+        </a>
+        <a href="https://www.linkedin.com/in/evan-darren-christanto-675b33251/">
+          <Linkedin color="white" />
+        </a>
+        <a href="https://www.instagram.com/evan__darren/">
+          <InstagramIcon color="white" />
+        </a>
       </div>
     </div>
   );
