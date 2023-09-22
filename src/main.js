@@ -7,17 +7,20 @@ import vegetable from "./vegetables.webp";
 import nuansas from "./nuansa.jpeg";
 import bigdatas from "./bigdata.webp";
 import commits from "./commit.jpeg";
-import discretes from "./discrete.jpeg"
+import discretes from "./discrete.jpeg";
 import { motion } from "framer-motion";
-import { Github, ExternalLink, Linkedin, InstagramIcon, Quote } from "lucide-react";
-
-
+import {
+  Github,
+  ExternalLink,
+  Linkedin,
+  InstagramIcon,
+  Quote,
+} from "lucide-react";
 
 export default function Main() {
-  
   const data = [
     {
-      name: "Discrete Event Simulator",
+      name: "DES",
       photo: discretes,
       link: "https://github.com/EvanCh08/Discrete-Event-Simulation",
       desc: "The project is about a event simulation, in which there’s a simulation that contains customers and cashiers. The project will simulate how the customers are served based on the arrival time of the customers and the availability of the cashiers.",
@@ -47,53 +50,51 @@ export default function Main() {
       desc: "Bus API is a project done when I took CS2030, Programming Methodology II. I used CompletableFuture and functional programming to solve this project. In the end theh project functions by calling a destination from one to another and the program will display the possible bs routes that the customers can take.",
     },
     {
-      name: "Eating Habit Analysis",
+      name: "Eating Analysis",
       photo: vegetable,
       link: "https://sites.google.com/view/evaneatinghabit?usp=sharing",
       desc: "During my summer holiday, I did this project about eating habit anaysis, whereby I analyzed my eating habit in a 5-day window. After further analysis through charts, graphs, and the amount of nutrients I got, I made a conclusion that I must fix my eating habit.",
     },
   ];
   return (
-    <div className="flex flex-col xsm:bg-slate-900 xl:bg-black xsm:min-w-screen xsm:h-full xl:w-full h-full w-screen">
-      <div className="flex flex-row items-center w-screen h-20 bg-zinc-950/80 fixed">
-        <div className="flex flex-row justify-between items-center w-full h-16 xl:m-32 m-6">
+    <div className="flex flex-col xsm:bg-black xl:bg-black xsm:min-w-screen xsm:h-full xl:w-full h-full w-screen">
+      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[150px] bg-zinc-950/80 fixed xl:space-y-0 xsm:space-y-20">
+        <div className="flex xl:flex-row xsm:flex-col xl:justify-between xsm:items-start xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10  ">
           <div className="">
-            <span className="text-white/90 text-xl font-lato">
+            <text className="text-white/90 text-xl text-start font-lato">
               Evan Darren Christanto
-            </span>
+            </text>
           </div>
-          <div className="xl:space-x-20 flex flex-row space-x-5 items-center">
-            <div className="flex flex-col">
-              <a href="/" className="text-white text-xl">
+          <div className="flex xl:space-x-20 xl:flex-row xsm:flex-col xsm:items-start xl:items-center">
+            <div className="flex flex-col my-3">
+              <a href="/" className="text-sky-600 text-xl font-bold font-lato">
                 Home
               </a>
-              <div className="bg-white rounded-xl h-[2px]"></div>
+            
             </div>
-            <a href="/contact" className="text-white/90 text-xl">
+            <a href="/contact" className="text-white/90 text-xl hover:text-sky-600 font-lato my-1">
               Contact Me
             </a>
             <a
               href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing"
-              className="text-white/90 flex justify-center text-xl border-white/90 border-solid rounded-lg hover:bg-white hover:text-black hover:border-black h-10"
+              className="text-white/90 flex justify-center text-xl rounded-lg hover:text-sky-600  h-10  xsm:items-start xl:items-center my-2"
             >
-              <text className=" px-3 py-1">My Resume</text>
+              <text className="xsm:pr-11 xl:pr-0 py-1">My Resume</text>
             </a>
           </div>
         </div>
       </div>
-      <div className="xl:my-4 xsm: my-3 mt-[100px] m-5">
+      <div className="xl:my-4 xsm: my-3 xl:mt-[70px] m-5">
         <div className=" xl:flex-row xl:mt-32 my-20 xl:grid grid-cols-2 xsm: flex flex-col xsm: m-5 ">
-          <div className="self-center mx-auto">
+          <div className="self-center mx-auto xl:mt-0 xsm:mt-[120px]">
             <img
-              className="rounded-full xsm:w-[320px] xsm:h-[310px] xl:h-[515px] xl:w-[525px]"
+              className="xl:rounded-full xsm:rounded-full xsm:w-[320px] xsm:h-[310px] xl:h-[515px] xl:w-[525px]"
               src={gans}
               alt="profile"
             />
           </div>
-          <div className="xsm:mt-10 xl:self-center xsm:mx-2 xsm:text-justify xl:text-start text-white/90 flex flex-col xl:mx-0">
-            <text className=" text-2xl font-bold">
-              Hello, there! I am
-            </text>
+          <div className="xsm:mt-10 xl:self-center xsm:text-justify xl:text-start text-white/90 flex flex-col xl:mx-0">
+            <text className=" text-2xl font-bold">Hello, there! I am</text>
             <text className="text-6xl font-bold ">Evan Darren Christanto</text>
             <text className="font-bold text-2xl">
               A Frontend Developer Studying at NUS
@@ -106,7 +107,7 @@ export default function Main() {
             </text>
             <a
               href="/contact"
-              className="flex justify-center items-center text-white/90 text-xl border-2 border-white/90 border-solid rounded-lg hover:bg-white hover:text-black hover:black w-40 mt-4 h-12"
+              className="flex justify-center items-center text-white/90 text-xl border-2 border-white/90 border-solid rounded-lg hover:bg-sky-600 hover:text-white hover:border-sky-600 hover:black w-40 mt-4 h-12"
             >
               <text className="font-bold px-5 text-center">Contact Me</text>
             </a>
@@ -114,58 +115,56 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 xl:mt-10 xsm:mt-3 xsm:mx-12 "></div>
-      <div className="grid xl:grid-cols-2 font-ubuntu xsm:m-5">
-        <div className="xl:mx-[107px] xsm:mx-6 w-[580px] text-justify my-auto xl:m-0 xsm: m-5 flex flex-col mt-10">
-          <text className="text-white/90 font-bold text-4xl xl:my-5 xsm: my-4 font-ubuntu">
-            About me
-          </text>
-          <text className="text-white/90 mt-5 font-bold text-2xl">My Skills</text>
-          <p className="text-white mt-5 text-lg font-ubuntu text-opacity-80 xl:pr-0 xsm:pr-[280px]">
-            In terms of technical skills, I excel in frontend and backend
-            development with tech stacks include React JS, React Native, HTML,
-            CSS, JavaScript, Python, Supabase, Tailwind CSS. Besides that I also
-            have several experiences in communication skills, leaderships, and
-            many others.
-          </p>
-
-          <text className="text-white/90 mt-5 font-bold text-2xl font-ubuntu">
-            Life Values
-          </text>
-          <p className="text-white mt-5 text-lg font-ubuntu text-opacity-80 xl:pr-0 xsm:pr-[280px]">
-            I value the experience that I have gotten from working with other
-            people, that is why my life goal is to help people, create values
-            for them, and become meaningful.
-          </p>
-        </div>
-        <div
-          className="flex flex-col my-auto text-white/90 xsm:my-5 xl:my-auto">
-          <div className="flex flex-row font-bold font-ubuntu text-6xl xsm:mx-6 xsm:mt-5 xsm:pr-[280px] xl:pr-0 xl:mx-[70px]">
-            <Quote color="white"/>
-            <text className="text-white/90 xsm:text-5xl xl:text-6xl font-bold font-ubuntu">
-              I can do all things
+      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 xl:mt-10 xsm:mt-3 xsm:mx-10 "></div>
+      <div className="flex flex-col text-white font-bolf font-ubuntu xsm:mx-10 xl:mx-32">
+        <text className="text-3xl text-white font-bold xl:my-auto xsm:my-5">
+          About Me
+        </text>
+        <div className="xl:grid grid-cols-2 xsm:flex flex-col">
+          <div className="flex flex-col xsm:[300px] xl:w-[580px]">
+            <text className="text-white my-5 font-bold font-ubuntu text-2xl">My Skills</text>
+            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80 ">
+              In terms of technical skills, I have experiences in both react native for app development and react js for web development. 
+              I performed well with React Native, React JS, Supabase, HTML, CSS, and Tailwind CSS. In addition to that, I have also learned about SQL, Tableau, and python for data analytics.  {" "}
+            </p>
+            <text className="text-white my-5 font-bold font-ubuntu text-2xl">What I value in Life</text>
+            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80 ">
+              I value the principles of setting the right purpose and believe. I have always set the purpose of things that I am doing in my life. Setting the purpose will give us the idea to take actions. Next up, Believe. Believing is one word that has a powerful meaning. When I believe that I can achieve, I will be able to achieve with the help of God and the people surrounding me. {" "}
+            </p>
+            <text className="text-white my-5 font-bold font-ubuntu text-2xl">Strength and Weakness</text>
+            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80 ">
+              I have always been able to solve problems in front end development. For example there is a specific styling that I would like to have, I have always been able to implement it using my very own solutions. If I were to define one of my weaknesses, I would say that I can have a sudden anxiety, to speak in front of many people. I have always been trying to transform it into my strength instead, by taking a public speaking course in my university.{" "}
+            </p>
+          </div>
+          <div className="flex flex-col my-auto text-white/90 xsm:my-5 xl:my-auto xsm:w-[300px] xl:w-[700px]">
+            <div className="flex flex-row font-bold font-ubuntu text-6xl xsm:mx-6 xsm:mt-5 xl:mx-[70px]">
+              <Quote color="white" />
+              <text className="text-white/90 xsm:text-5xl xl:text-6xl font-bold font-ubuntu">
+                I can do all things
+              </text>
+            </div>
+            <text className=" xsm:text-5xl xl:text-6xl font-bold font-ubuntu xl:mx-24 xsm: mx-10  ">
+              through Christ
             </text>
-          </div >
-          <text className=" xsm:text-5xl xl:text-6xl font-bold font-ubuntu xl:mx-24 xsm: mx-10 xl:pr-0 xsm:pr-[280px]">
-            through Christ
-          </text>
-          <text className=" xsm:text-5xl xl:text-6xl font-bold font-ubuntu xl:mx-24 xsm:mx-10 xl:pr-0 xsm:pr-[280px]">
+            <text className=" xsm:text-5xl xl:text-6xl font-bold font-ubuntu xl:mx-24 xsm:mx-10 ">
               who strengthens
             </text>
-          <div className="flex flex-row font-bold font-ubuntu text-6xl xl:mx-0 xsm:mx-10 xl:pr-0">
-            <text className=" xsm:text-5xl xl:text-6xl font-bold font-ubuntu xl:ml-24">
-              me.
-            </text>
-            <Quote color="white"/>
+            <div className="flex flex-row font-bold font-ubuntu text-6xl xl:mx-0 xsm:mx-10">
+              <text className=" xsm:text-5xl xl:text-6xl font-bold font-ubuntu xl:ml-24">
+                me.
+              </text>
+              <Quote color="white" />
+            </div>
           </div>
-          
         </div>
       </div>
-      <text className="text-white/90 font-bold text-4xl xl:my-10 xsm: my-5 xl:mx-32 xsm:mx-10 font-ubuntu">
+      <text className="text-white/90 font-bold text-3xl xl:my-10 xsm: my-5 xl:mx-32 xsm:mx-10 font-ubuntu">
         My Experience
       </text>
       <div className="flex flex-col text-white font-bolf font-ubuntu xsm:mx-10 xl:mx-32">
-        <text className="text-2xl text-white/90 font-bold xl:my-auto xsm:my-5">NUSSU CommIT Technical Team Member</text>
+        <text className="text-2xl text-white/90 font-bold xl:my-auto xsm:my-5">
+          NUSSU CommIT Technical Team Member
+        </text>
         <div className="xl:grid grid-cols-2 xsm:flex flex-col">
           <div className="flex flex-col xsm:[300px] xl:w-[580px]">
             <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
@@ -177,15 +176,19 @@ export default function Main() {
               experiences here in NUSSU CommIT!{" "}
             </p>
           </div>
-          <img src={commits} className="w-[640px] mt-7 rounded-lg" alt="ya maap" />
+          <img
+            src={commits}
+            className="w-[640px] mt-7 rounded-lg"
+            alt="ya maap"
+          />
         </div>
 
-        <div className="xl:grid grid-cols-2 my-3 xsm:flex flex-col">
-          <div className="flex flex-col w-[580px] xsm:mt-10 xl:mt-0">
-            <text className="text-2xl xl:my-5 text-white/90 font-bold xl:pr-0 ">
-              NUANSA Set and Props Co-Director
-            </text>
-            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80 xl:pr-0 xsm:pr-[280px]">
+        <text className="text-2xl text-white/90 font-bold xl:my-auto xsm:my-5">
+          NUANSA Set and Props Director
+        </text>
+        <div className="xl:grid grid-cols-2 xsm:flex flex-col">
+          <div className="flex flex-col xsm:[300px] xl:w-[580px]">
+            <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
               NUANSA is an esteemed Indonesian drama musical theater production
               at the National University of Singapore (NUS). Before the COVID19
               Pandemic, NUANSA had always been operating in the University
@@ -203,17 +206,17 @@ export default function Main() {
           </div>
           <img
             src={nuansas}
-            className="w-[640px]  xl:mt-20 rounded-lg border-2 border-white/75"
+            className="w-[640px] mt-7 rounded-lg"
             alt="ya maap"
           />
         </div>
 
-        <div className="xl:grid grid-cols-2 my-3 xsm:flex flex-col">
-          <div className="flex flex-col w-[580px]">
-            <text className="text-2xl my-5 text-white/90 font-bold xl:pr-0 xsm:pr-[280px]">
-              Data Analyst Internship
-            </text>
-            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80 xl:pr-0 xsm:pr-[280px]">
+        <text className="text-2xl text-white/90 font-bold xl:my-auto xsm:my-5">
+          Data Analyst Internship
+        </text>
+        <div className="xl:grid grid-cols-2 xsm:flex flex-col">
+          <div className="flex flex-col xsm:[300px] xl:w-[580px]">
+            <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
               During summer, I did my very first internship in Indonesia which
               is in PT Catur Kimiatama Agung. It is a company that operates with
               paint and powders I had an incredible experience of talking to my
@@ -221,7 +224,7 @@ export default function Main() {
               seeing the sales company data from an excel sheet. I observed many
               things and learned that factors on how a company operates can
               vary. After that, I collaborated with my supervisor and seek for
-              his advices on my insights. I improved the report that I have made
+              His advice on my insights. I improved the report that I have made
               earlier and submitted it to the supervisor, to be presented to the
               upper managers. However, I got a one of a lifetime chance to
               present myself and my findings in front of my manager at the last
@@ -231,7 +234,7 @@ export default function Main() {
           </div>
           <img
             src={bigdatas}
-            className="w-[640px] rounded-lg xsm:mt-10 xl:mt-20 xl:ml-3"
+            className="w-[640px] mt-7 rounded-lg"
             alt="ya maap"
           />
         </div>
@@ -273,21 +276,21 @@ export default function Main() {
         ))}
       </div>
 
-      <div className="mx-32 my-3 mt-0">
+      <div className="mx-32 xsm:my-3 xl:my-1">
         <text className="text-white xsm:flex justify-center xl:self-end font-ubuntu font-bold text-3xl">
           Social
         </text>
       </div>
-      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 xl:mt-10 xsm:mt-3 xsm:mx-12"></div>
+      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm:m-5 xsm:mt-3 xsm:mx-10"></div>
       <div className="flex flex-row justify-center space-x-5 mb-3">
         <a href="https://github.com/EvanCh08">
-          <Github color="white" size='35'/>
+          <Github color="white" size="35" />
         </a>
         <a href="https://www.linkedin.com/in/evan-darren-christanto-675b33251/">
-          <Linkedin color="white" size='35'/>
+          <Linkedin color="white" size="35" />
         </a>
         <a href="https://www.instagram.com/evan__darren/">
-          <InstagramIcon color="white" size='35'/>
+          <InstagramIcon color="white" size="35" />
         </a>
       </div>
     </div>
