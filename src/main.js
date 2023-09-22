@@ -8,7 +8,6 @@ import nuansas from "./nuansa.jpeg";
 import bigdatas from "./bigdata.webp";
 import commits from "./commit.jpeg";
 import discretes from "./discrete.jpeg";
-import { motion } from "framer-motion";
 import {
   Github,
   ExternalLink,

@@ -1,12 +1,10 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import ContactUs from "./email";
+
 import {
   Github,
-  ExternalLink,
   Linkedin,
   InstagramIcon,
-  Quote,
 } from "lucide-react";
 
 export default function Contact() {
