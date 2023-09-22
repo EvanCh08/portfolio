@@ -3,18 +3,22 @@ import buses from "./bus.jpeg";
 import planes from "./plane.jpeg";
 import tiktoks from "./tiktokun.jpeg";
 import splitrrs from "./splitrr.jpeg";
-import customers from "./customer.jpeg";
 import vegetable from "./vegetables.webp";
 import nuansas from "./nuansa.jpeg";
 import bigdatas from "./bigdata.webp";
 import commits from "./commit.jpeg";
-import { Github, ExternalLink, Linkedin, InstagramIcon } from "lucide-react";
+import discretes from "./discrete.jpeg"
+import { motion } from "framer-motion";
+import { Github, ExternalLink, Linkedin, InstagramIcon, Quote } from "lucide-react";
+
+
 
 export default function Main() {
+  
   const data = [
     {
       name: "Discrete Event Simulator",
-      photo: customers,
+      photo: discretes,
       link: "https://github.com/EvanCh08/Discrete-Event-Simulation",
       desc: "The project is about a event simulation, in which there’s a simulation that contains customers and cashiers. The project will simulate how the customers are served based on the arrival time of the customers and the availability of the cashiers.",
     },
@@ -50,7 +54,7 @@ export default function Main() {
     },
   ];
   return (
-    <div className="flex flex-col bg-black xsm:h-full xl:w-full h-full">
+    <div className="flex flex-col xsm:bg-slate-900 xl:bg-black xsm:h-full xl:w-full h-full">
       <div className="flex flex-row items-center w-full h-20 bg-zinc-950/80 fixed">
         <div className="flex flex-row justify-between items-center w-full h-16 xl:m-32 m-6">
           <div className="">
@@ -81,12 +85,12 @@ export default function Main() {
         <div className=" xl:flex-row xl:mt-32 my-20 xl:grid grid-cols-2 xsm: flex flex-col xsm: m-5 ">
           <div className="self-center mx-auto">
             <img
-              className="rounded-full xsm:w-[360px] xsm:h-[360px] xl:h-[515px] xl:w-[525px]"
+              className="rounded-full xsm:w-[320px] xsm:h-[310px] xl:h-[515px] xl:w-[525px]"
               src={gans}
               alt="profile"
             />
           </div>
-          <div className="xsm:mt-10 xl:self-center text-white/90 flex flex-col xl:">
+          <div className="xsm:mt-10 xl:self-center xsm:mx-2 xsm:text-justify xl:text-start text-white/90 flex flex-col xl:mx-0">
             <text className=" text-2xl font-bold">
               Hello, there! I am
             </text>
@@ -110,14 +114,14 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 mt-10"></div>
+      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 mt-10 xsm:mx-12"></div>
       <div className="grid xl:grid-cols-2 font-ubuntu xsm:m-5">
-        <div className="xl:mx-[107px] w-[580px] text-justify my-auto xl:m-0 xsm: m-5 flex flex-col mt-10">
+        <div className="xl:mx-[107px] xsm:mx-4 w-[580px] text-justify my-auto xl:m-0 xsm: m-5 flex flex-col mt-10">
           <text className="text-white/90 font-bold text-4xl xl:my-5 xsm: my-4 font-ubuntu">
             About me
           </text>
           <text className="text-white/90 mt-5 font-bold text-2xl">My Skills</text>
-          <p className="text-white mt-5 text-lg font-ubuntu text-opacity-80">
+          <p className="text-white mt-5 text-lg font-ubuntu text-opacity-80 xsm:w-screen">
             In terms of technical skills, I excel in frontend and backend
             development with tech stacks include React JS, React Native, HTML,
             CSS, JavaScript, Python, Supabase, Tailwind CSS. Besides that I also
@@ -134,19 +138,28 @@ export default function Main() {
             for them, and become meaningful.
           </p>
         </div>
-        <div className="flex flex-col my-auto text-white/90">
+        <div
+          
+          className="flex flex-col my-auto text-white/90">
           <div className="flex flex-row font-bold font-ubuntu text-6xl mx-[70px]">
-            <text className="">"</text>
+            <Quote color="white"/>
             <text className="text-white/90 text-6xl font-bold font-ubuntu ">
               I can do all things
             </text>
-          </div>
+          </div >
           <text className=" text-6xl font-bold font-ubuntu  mx-24">
             through Christ
           </text>
           <text className=" text-6xl font-bold font-ubuntu  mx-24">
-            strengthens me."
-          </text>
+              who strengthens
+            </text>
+          <div className="flex flex-row font-bold font-ubuntu text-6xl bg-">
+            <text className=" text-6xl font-bold font-ubuntu  ml-24">
+              me.
+            </text>
+            <Quote color="white"/>
+          </div>
+          
         </div>
       </div>
       <text className="text-white/90 font-bold text-4xl xl:my-10 xsm: my-4 xl: mx-32 font-ubuntu">
@@ -224,18 +237,18 @@ export default function Main() {
           />
         </div>
       </div>
-      <text className="text-white/90 font-bold text-3xl xl:my-10 xsm: my-4 xl: mx-32 font-ubuntu">
+      <text className="text-white/90 font-bold text-3xl xl:my-10 xsm:my-4 xl:mx-32 xsm:mx-8 font-ubuntu">
         My Projects
       </text>
-      <div className="xl:grid grid-cols-3 xl:gap-7 xsm:flex flex-col m-5 items-center mx-32">
+      <div className="xl:grid grid-cols-3 xl:gap-7 xsm:flex flex-col m-5 xsm:space-y-3 xl:space-y-0 items-center xsm:mx-6 xl:mx-32">
         {data.map((product, index) => (
           <div
-            className=" bg-zinc-900 text-white transition ease-in-out delay-175 hover:bg-red-700 hover:text-white hover:-translate-y-1 hover:scale-105 font-ubuntu h-[500px] self-center rounded-lg flex flex-col"
+            className=" bg-zinc-800 text-white transition ease-in-out delay-175 hover:bg-sky-700 hover:text-white hover:-translate-y-1 hover:scale-105 font-ubuntu h-[500px] rounded-lg flex flex-col"
             key={index}
           >
             <div>
               <img
-                className="h- w-full rounded-t-lg"
+                className="xl:h-[250px] w-full rounded-t-lg"
                 src={product.photo}
                 alt="turu deck"
               />
@@ -261,21 +274,21 @@ export default function Main() {
         ))}
       </div>
 
-      <div className="mx-32 my-3">
-        <text className="text-white flex justify-center font-ubuntu font-bold text-2xl">
+      <div className="mx-32 my-3 xl:mt-0 xsm:mt-60">
+        <text className="text-white xsm:flex justify-center xl:self-end font-ubuntu font-bold text-3xl">
           Social
         </text>
       </div>
-      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-1 xsm: m-5"></div>
-      <div className="flex flex-row justify-center space-x-5">
+      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 mt-3 xsm:mx-3"></div>
+      <div className="flex flex-row justify-center space-x-5 mb-3">
         <a href="https://github.com/EvanCh08">
-          <Github color="white" />
+          <Github color="white" size='35'/>
         </a>
         <a href="https://www.linkedin.com/in/evan-darren-christanto-675b33251/">
-          <Linkedin color="white" />
+          <Linkedin color="white" size='35'/>
         </a>
         <a href="https://www.instagram.com/evan__darren/">
-          <InstagramIcon color="white" />
+          <InstagramIcon color="white" size='35'/>
         </a>
       </div>
     </div>
