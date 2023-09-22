@@ -54,8 +54,8 @@ export default function Main() {
     },
   ];
   return (
-    <div className="flex flex-col xsm:bg-slate-900 xl:bg-black xsm:h-full xl:w-full h-full">
-      <div className="flex flex-row items-center w-full h-20 bg-zinc-950/80 fixed">
+    <div className="flex flex-col xsm:bg-slate-900 xl:bg-black xsm:min-w-screen xsm:h-full xl:w-full h-full w-screen">
+      <div className="flex flex-row items-center w-screen h-20 bg-zinc-950/80 fixed">
         <div className="flex flex-row justify-between items-center w-full h-16 xl:m-32 m-6">
           <div className="">
             <span className="text-white/90 text-xl font-lato">
@@ -81,7 +81,7 @@ export default function Main() {
           </div>
         </div>
       </div>
-      <div className="xl:my-4 mt-[100px] m-5">
+      <div className="xl:my-4 xsm: my-3 mt-[100px] m-5">
         <div className=" xl:flex-row xl:mt-32 my-20 xl:grid grid-cols-2 xsm: flex flex-col xsm: m-5 ">
           <div className="self-center mx-auto">
             <img
@@ -114,14 +114,14 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 mt-10 xsm:mx-12"></div>
+      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 xl:mt-10 xsm:mt-3 xsm:mx-12 "></div>
       <div className="grid xl:grid-cols-2 font-ubuntu xsm:m-5">
-        <div className="xl:mx-[107px] xsm:mx-4 w-[580px] text-justify my-auto xl:m-0 xsm: m-5 flex flex-col mt-10">
+        <div className="xl:mx-[107px] xsm:mx-6 w-[580px] text-justify my-auto xl:m-0 xsm: m-5 flex flex-col mt-10">
           <text className="text-white/90 font-bold text-4xl xl:my-5 xsm: my-4 font-ubuntu">
             About me
           </text>
           <text className="text-white/90 mt-5 font-bold text-2xl">My Skills</text>
-          <p className="text-white mt-5 text-lg font-ubuntu text-opacity-80 xsm:w-screen">
+          <p className="text-white mt-5 text-lg font-ubuntu text-opacity-80 xl:pr-0 xsm:pr-[280px]">
             In terms of technical skills, I excel in frontend and backend
             development with tech stacks include React JS, React Native, HTML,
             CSS, JavaScript, Python, Supabase, Tailwind CSS. Besides that I also
@@ -132,29 +132,28 @@ export default function Main() {
           <text className="text-white/90 mt-5 font-bold text-2xl font-ubuntu">
             Life Values
           </text>
-          <p className="text-white mt-5 text-lg font-ubuntu text-opacity-80">
+          <p className="text-white mt-5 text-lg font-ubuntu text-opacity-80 xl:pr-0 xsm:pr-[280px]">
             I value the experience that I have gotten from working with other
             people, that is why my life goal is to help people, create values
             for them, and become meaningful.
           </p>
         </div>
         <div
-          
-          className="flex flex-col my-auto text-white/90">
-          <div className="flex flex-row font-bold font-ubuntu text-6xl mx-[70px]">
+          className="flex flex-col my-auto text-white/90 xsm:my-5 xl:my-auto">
+          <div className="flex flex-row font-bold font-ubuntu text-6xl xsm:mx-6 xsm:mt-5 xsm:pr-[280px] xl:pr-0 xl:mx-[70px]">
             <Quote color="white"/>
-            <text className="text-white/90 text-6xl font-bold font-ubuntu ">
+            <text className="text-white/90 xsm:text-5xl xl:text-6xl font-bold font-ubuntu">
               I can do all things
             </text>
           </div >
-          <text className=" text-6xl font-bold font-ubuntu  mx-24">
+          <text className=" xsm:text-5xl xl:text-6xl font-bold font-ubuntu xl:mx-24 xsm: mx-10 xl:pr-0 xsm:pr-[280px]">
             through Christ
           </text>
-          <text className=" text-6xl font-bold font-ubuntu  mx-24">
+          <text className=" xsm:text-5xl xl:text-6xl font-bold font-ubuntu xl:mx-24 xsm:mx-10 xl:pr-0 xsm:pr-[280px]">
               who strengthens
             </text>
-          <div className="flex flex-row font-bold font-ubuntu text-6xl bg-">
-            <text className=" text-6xl font-bold font-ubuntu  ml-24">
+          <div className="flex flex-row font-bold font-ubuntu text-6xl xl:mx-0 xsm:mx-10 xl:pr-0">
+            <text className=" xsm:text-5xl xl:text-6xl font-bold font-ubuntu xl:ml-24">
               me.
             </text>
             <Quote color="white"/>
@@ -162,14 +161,14 @@ export default function Main() {
           
         </div>
       </div>
-      <text className="text-white/90 font-bold text-4xl xl:my-10 xsm: my-4 xl: mx-32 font-ubuntu">
+      <text className="text-white/90 font-bold text-4xl xl:my-10 xsm: my-5 xl:mx-32 xsm:mx-10 font-ubuntu">
         My Experience
       </text>
-      <div className="flex flex-col text-white font-bolf font-ubuntu mx-32">
-        <text className="text-2xl text-white/90 font-bold">NUSSU CommIT Technical Team Member</text>
-        <div className="grid grid-cols-2">
-          <div className="flex flex-col w-[580px]">
-            <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80">
+      <div className="flex flex-col text-white font-bolf font-ubuntu xsm:mx-10 xl:mx-32">
+        <text className="text-2xl text-white/90 font-bold xl:my-auto xsm:my-5">NUSSU CommIT Technical Team Member</text>
+        <div className="xl:grid grid-cols-2 xsm:flex flex-col">
+          <div className="flex flex-col xsm:[300px] xl:w-[580px]">
+            <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
               I just entered NUSSU CommIT Technical Team Member in September,
               2023. I performed here as an experienced frontend developer that
               is tasked to design NUSSU websites. We also have workshops every
@@ -181,17 +180,12 @@ export default function Main() {
           <img src={commits} className="w-[640px] mt-7 rounded-lg" alt="ya maap" />
         </div>
 
-        <div className="grid grid-cols-2 my-3">
-          <img
-            src={nuansas}
-            className="w-[580px] mt-20 rounded-lg"
-            alt="ya maap"
-          />
-          <div className="flex flex-col w-[628px]">
-            <text className="text-2xl my-5 text-white/90 font-bold">
+        <div className="xl:grid grid-cols-2 my-3 xsm:flex flex-col">
+          <div className="flex flex-col w-[580px] xsm:mt-10 xl:mt-0">
+            <text className="text-2xl xl:my-5 text-white/90 font-bold xl:pr-0 ">
               NUANSA Set and Props Co-Director
             </text>
-            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80">
+            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80 xl:pr-0 xsm:pr-[280px]">
               NUANSA is an esteemed Indonesian drama musical theater production
               at the National University of Singapore (NUS). Before the COVID19
               Pandemic, NUANSA had always been operating in the University
@@ -207,14 +201,19 @@ export default function Main() {
               relationship. I believe that the event will run smoothly.{" "}
             </p>
           </div>
+          <img
+            src={nuansas}
+            className="w-[640px]  xl:mt-20 rounded-lg border-2 border-white/75"
+            alt="ya maap"
+          />
         </div>
 
-        <div className="grid grid-cols-2 my-3">
+        <div className="xl:grid grid-cols-2 my-3 xsm:flex flex-col">
           <div className="flex flex-col w-[580px]">
-            <text className="text-2xl my-5 text-white/90 font-bold">
+            <text className="text-2xl my-5 text-white/90 font-bold xl:pr-0 xsm:pr-[280px]">
               Data Analyst Internship
             </text>
-            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80">
+            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80 xl:pr-0 xsm:pr-[280px]">
               During summer, I did my very first internship in Indonesia which
               is in PT Catur Kimiatama Agung. It is a company that operates with
               paint and powders I had an incredible experience of talking to my
@@ -232,15 +231,15 @@ export default function Main() {
           </div>
           <img
             src={bigdatas}
-            className="w-[615px] rounded-lg mt-20 ml-3"
+            className="w-[640px] rounded-lg xsm:mt-10 xl:mt-20 xl:ml-3"
             alt="ya maap"
           />
         </div>
       </div>
-      <text className="text-white/90 font-bold text-3xl xl:my-10 xsm:my-4 xl:mx-32 xsm:mx-8 font-ubuntu">
+      <text className="text-white/90 font-bold text-3xl xl:my-10 xsm:my-4 xl:mx-32 xsm:mx-10 font-ubuntu">
         My Projects
       </text>
-      <div className="xl:grid grid-cols-3 xl:gap-7 xsm:flex flex-col m-5 xsm:space-y-3 xl:space-y-0 items-center xsm:mx-6 xl:mx-32">
+      <div className="xl:grid grid-cols-3 xl:gap-7 xsm:flex flex-col m-5 xsm:space-y-10 xl:space-y-0 items-center xsm:mx-10 xl:mx-32">
         {data.map((product, index) => (
           <div
             className=" bg-zinc-800 text-white transition ease-in-out delay-175 hover:bg-sky-700 hover:text-white hover:-translate-y-1 hover:scale-105 font-ubuntu h-[500px] rounded-lg flex flex-col"
@@ -274,12 +273,12 @@ export default function Main() {
         ))}
       </div>
 
-      <div className="mx-32 my-3 xl:mt-0 xsm:mt-60">
+      <div className="mx-32 my-3 mt-0">
         <text className="text-white xsm:flex justify-center xl:self-end font-ubuntu font-bold text-3xl">
           Social
         </text>
       </div>
-      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 mt-3 xsm:mx-3"></div>
+      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 xl:mt-10 xsm:mt-3 xsm:mx-12"></div>
       <div className="flex flex-row justify-center space-x-5 mb-3">
         <a href="https://github.com/EvanCh08">
           <Github color="white" size='35'/>
