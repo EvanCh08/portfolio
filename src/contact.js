@@ -23,7 +23,7 @@ export default function Contact() {
   }
   return (
     <div className="flex flex-col  bg-black xsm:h-full xl:h-screen">
-      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[150px] bg-zinc-950/80 fixed xl:space-y-0 xsm:space-y-20">
+      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[300px] bg-zinc-950/80 fixed xl:space-y-0 xsm:space-y-20">
         <div className="flex xl:flex-row xsm:flex-col xl:justify-between xsm:items-start xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10  ">
           <div className="">
             <text className="text-white/90 text-xl text-start font-lato">
@@ -37,7 +37,7 @@ export default function Contact() {
               </a>
             
             </div>
-            <a href="/contact" className="text-white/90 text-xl font-bold text-sky-600 font-lato my-1">
+            <a href="/contact" className=" text-xl font-bold text-sky-600 font-lato my-1">
               Contact Me
             </a>
             <a
