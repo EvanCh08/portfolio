@@ -82,8 +82,8 @@ export default function Contact() {
         
       </div>
       {isOpen && (
-          <div className="h-30 mt-[70px] bg-zinc-950/80 text-white xsm:mx-10" >
-          <div className="flex flex-col space-y-5">
+        <div className="h-40 w-full mt-[70px] bg-zinc-950/80 text-white xsm:mx-10 fixed" >
+          <div className="flex flex-col space-y-5 fixed">
             <a href="/" className="  text-xl   hover:text-sky-600 font-ubuntu font-bold">Home</a>
             <a className=" text-xl font-bold text-sky-600  font-ubuntu  my-1" href="/contact">Contact Me</a>
             <a href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">My Resume</a>
@@ -92,7 +92,7 @@ export default function Contact() {
 
         )}
 
-      <div className="xl:mt-[200px] xsm:mt-[150px] xsm:mx-auto xl:mx-32">
+      <div className="xl:mt-[200px] xsm:mt-[270px] xsm:mx-auto xl:mx-32">
         <text className="text-white font-bold text-4xl xl:my-5 xsm: my-4 font-ubuntu">
           Contact Me
         </text>

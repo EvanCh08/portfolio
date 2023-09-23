@@ -115,7 +115,7 @@ export default function Main() {
         
       </div>
       {isOpen && (
-          <div className="h-30 mt-[70px] bg-zinc-950/80 text-white xsm:mx-10" >
+          <div className="h-40 mt-[70px] bg-zinc-950/80 text-white xsm:mx-10 fixed w-full" >
               <div className="flex flex-col space-y-5">
                 <a href="/" className="  text-xl text-sky-600  font-ubuntu font-bold">Home</a>
                 <a className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" href="/contact">Contact Me</a>
