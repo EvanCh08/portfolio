@@ -29,23 +29,27 @@ export default function Contact() {
   const [isOpen, setIsOpen] = useState(false);
 
   const togglenavbar = () => {
-    setIsOpen(true);
+    if (isOpen === false) {
+      setIsOpen(true);
+    } else {
+      setIsOpen(false);
+    }
   }
 
   return (
     <div className="flex flex-col bg-black xsm:h-full xl:h-screen">
-      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[200px] bg-zinc-950/80 fixed xl:space-y-0 xsm:space-y-20">
-        <div className="flex xl:flex-row xsm:flex-col xl:justify-between xsm:items-start xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10  ">
+      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[70px] bg-zinc-950/80 fixed xl:space-y-0 xsm:space-y-20">
+        <div className="flex xl:flex-row xsm:flex-row justify-between  xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10  ">
           <div className="">
             <text className="text-white/90 text-xl text-start font-ubuntu font-bold">
               Evan Darren Christanto
             </text>
           </div>
-          <div className="flex xl:space-x-20 xl:flex-row xsm:flex-col xsm:items-start xl:items-center">
+          <div className="flex xl:space-x-20 xl:flex-row xsm:flex-col xsm:items-start xl:items-center visile xl:flex xsm:hidden">
             <div className="flex flex-col my-3">
               <a
                 href="/"
-                className=" text-white text-xl hover:text-sky-600  font-ubuntu font-bold"
+                className="  hover:text-sky-600 text-xl text-white font-ubuntu font-bold"
               >
                 Home
               </a>
@@ -65,10 +69,30 @@ export default function Contact() {
               </text>
             </a>
           </div>
+          <div className="visible xl:hidden xsm:visible xl:mx-0 bg-zinc-950/80 ">
+            <button onClick={togglenavbar}>
+              {isOpen ? <X color="white" size="40"/> : <Menu color="white" size="40"/>}
+            </button>
+          </div>
         </div>
+        
+        
+        
+
+        
+      </div>
+      {isOpen && (
+          <div className="h-30 mt-[70px] bg-zinc-950/80 text-white xsm:mx-10" >
+          <div className="flex flex-col space-y-5">
+            <a href="/" className="  text-xl   hover:text-sky-600 font-ubuntu font-bold">Home</a>
+            <a className=" text-xl font-bold text-sky-600  font-ubuntu  my-1" href="/contact">Contact Me</a>
+            <a href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">My Resume</a>
+          </div>
       </div>
 
-      <div className="xl:mt-[200px] xsm:mt-[250px] xsm:mx-auto xl:mx-32">
+        )}
+
+      <div className="xl:mt-[200px] xsm:mt-[150px] xsm:mx-auto xl:mx-32">
         <text className="text-white font-bold text-4xl xl:my-5 xsm: my-4 font-ubuntu">
           Contact Me
         </text>

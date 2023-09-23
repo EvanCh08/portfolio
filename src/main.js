@@ -70,11 +70,11 @@ export default function Main() {
   }
   return (
     <div className="flex flex-col xsm:bg-black xl:bg-black xsm:min-w-screen xsm:h-full xl:w-full h-full w-screen">
-      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[200px] bg-zinc-950/80 fixed xl:space-y-0 xsm:space-y-20">
-        <div className="flex xl:flex-row xsm:flex-row justify-between  xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10  ">
+      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[70px] bg-zinc-950/80 fixed xl:space-y-0 xsm:space-y-20">
+        <div className="flex xl:flex-row xsm:flex-row justify-between   xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10  ">
           <div className="">
             <text className="text-white/90 text-xl text-start font-ubuntu font-bold">
-              Evan 
+              Evan Darren Christanto
             </text>
           </div>
           <div className="flex xl:space-x-20 xl:flex-row xsm:flex-col xsm:items-start xl:items-center visile xl:flex xsm:hidden">
@@ -101,27 +101,32 @@ export default function Main() {
               </text>
             </a>
           </div>
-          <div className="visible xl:hidden xsm:visible xl:mx-0">
+          <div className="visible xl:hidden xsm:visible xl:mx-0  ">
             <button onClick={togglenavbar}>
-              {isOpen ? <X color="white" size="35"/> : <Menu color="white" size="35"/>}
+              {isOpen ? <X color="white" size="40"/> : <Menu color="white" size="40"/>}
             </button>
           </div>
-          {isOpen && (
-          <div className="h-10 bg-white text-white" >
-              <text className="text-white">salekom</text>
+        </div>
+        
+        
+        
+        
+
+        
+      </div>
+      {isOpen && (
+          <div className="h-30 mt-[70px] bg-zinc-950/80 text-white xsm:mx-10" >
+              <div className="flex flex-col space-y-5">
+                <a href="/" className="  text-xl text-sky-600  font-ubuntu font-bold">Home</a>
+                <a className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" href="/contact">Contact Me</a>
+                <a href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">My Resume</a>
+              </div>
           </div>
 
         )}
-
-        </div>
-
-        
-        
-        
-      </div>
       <div className="xl:my-4 xsm: my-3 xl:mt-[70px] m-5">
         <div className=" xl:flex-row xl:mt-32 my-20 xl:grid grid-cols-2 xsm: flex flex-col xsm: m-5 ">
-          <div className="self-center mx-auto xl:mt-0 xsm:mt-[120px]">
+          <div className="self-center mx-auto xl:mt-0 xsm:mt-[10px]">
             <img
               className="xl:rounded-full xsm:rounded-full xsm:w-[320px] xsm:h-[310px] xl:h-[515px] xl:w-[525px]"
               src={gans}
