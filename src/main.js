@@ -14,7 +14,9 @@ import {
   Linkedin,
   InstagramIcon,
   Quote,
+  X, Menu
 } from "lucide-react";
+import { useState } from 'react';
 
 export default function Main() {
   const data = [
@@ -55,33 +57,67 @@ export default function Main() {
       desc: "During my summer holiday, I did this project about eating habit anaysis, whereby I analyzed my eating habit in a 5-day window. After further analysis through charts, graphs, and the amount of nutrients I got, I made a conclusion that I must fix my eating habit.",
     },
   ];
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglenavbar = () => {
+    if (isOpen === false) {
+      setIsOpen(true);
+    } else {
+      setIsOpen(false);
+    }
+    
+  }
   return (
     <div className="flex flex-col xsm:bg-black xl:bg-black xsm:min-w-screen xsm:h-full xl:w-full h-full w-screen">
-      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[150px] bg-zinc-950/80 fixed xl:space-y-0 xsm:space-y-20">
-        <div className="flex xl:flex-row xsm:flex-col xl:justify-between xsm:items-start xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10  ">
+      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[200px] bg-zinc-950/80 fixed xl:space-y-0 xsm:space-y-20">
+        <div className="flex xl:flex-row xsm:flex-row justify-between  xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10  ">
           <div className="">
-            <text className="text-white/90 text-xl text-start font-lato">
-              Evan Darren Christanto
+            <text className="text-white/90 text-xl text-start font-ubuntu font-bold">
+              Evan 
             </text>
           </div>
-          <div className="flex xl:space-x-20 xl:flex-row xsm:flex-col xsm:items-start xl:items-center">
+          <div className="flex xl:space-x-20 xl:flex-row xsm:flex-col xsm:items-start xl:items-center visile xl:flex xsm:hidden">
             <div className="flex flex-col my-3">
-              <a href="/" className="text-sky-600 text-xl font-bold font-lato">
+              <a
+                href="/"
+                className="  text-xl text-sky-600  font-ubuntu font-bold"
+              >
                 Home
               </a>
-            
             </div>
-            <a href="/contact" className="text-white/90 text-xl hover:text-sky-600 font-lato my-1">
+            <a
+              href="/contact"
+              className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1"
+            >
               Contact Me
             </a>
             <a
               href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing"
               className="text-white/90 flex justify-center text-xl rounded-lg hover:text-sky-600  h-10  xsm:items-start xl:items-center my-2"
             >
-              <text className="xsm:pr-11 xl:pr-0 py-1">My Resume</text>
+              <text className="xsm:pr-11 xl:pr-0 py-1 font-bold font-ubuntu">
+                My Resume
+              </text>
             </a>
           </div>
+          <div className="visible xl:hidden xsm:visible xl:mx-0">
+            <button onClick={togglenavbar}>
+              {isOpen ? <X color="white" size="35"/> : <Menu color="white" size="35"/>}
+            </button>
+          </div>
+          {isOpen && (
+          <div className="h-10 bg-white text-white" >
+              <text className="text-white">salekom</text>
+          </div>
+
+        )}
+
         </div>
+
+        
+        
+        
       </div>
       <div className="xl:my-4 xsm: my-3 xl:mt-[70px] m-5">
         <div className=" xl:flex-row xl:mt-32 my-20 xl:grid grid-cols-2 xsm: flex flex-col xsm: m-5 ">
