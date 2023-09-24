@@ -13,7 +13,7 @@ import {
   ExternalLink,
   Linkedin,
   InstagramIcon,
-  Quote,
+  Play,
   X, Menu
 } from "lucide-react";
 import { useState, useRef } from 'react';
@@ -33,16 +33,16 @@ export default function Main() {
       desc: "In this project, I performed as a frontend and backend codeveloper. Some features we have are login sign up page, splitbill page, and register menu page for restaurants. Ouor main objective is to help restaurants and customers in terms of splibill.",
     },
     {
-      name: "Tiktok Hackathon",
+      name: "Tiktok",
       photo: tiktoks,
       link: "https://github.com/kyledilao777/Tiktok-Hack-2023",
-      desc: "During the Hackathon, I worked as a frontend developer that is tasked to make sure that all the features are connected and attracts many people to use our application. Tech stacks we used are react native, supabase, and tailwind CSS.",
+      desc: "During Tiktok Hackathon, I worked as a frontend developer that is tasked to make sure that all the features are connected and attracts many people to use our application. Tech stacks we used are react native, supabase, and tailwind CSS.",
     },
     {
       name: "Airline Analysis",
       photo: planes,
       link: "https://docs.google.com/presentation/d/1sTyUDye3xVW0hV3Yd1CSoTNCy5OB3RsC/edit#slide=id.p1",
-      desc: "During the Hackathon, I worked as a frontend developer that is tasked to make sure that all the features are connected and attracts many people to use our application. Tech stacks we used are react native, supabase, and tailwind CSS.",
+      desc: "In BT2102 module, alongside with my other 5 teammates, we created a project about airline analysis, using SQl, Tableau, and Microsoft Powerpoint. I performed as a data cleaner for this job, so I managed a lot in using SQL. But I also executed some data visualization using tableau.",
     },
     {
       name: "Bus API",
@@ -61,13 +61,15 @@ export default function Main() {
   const [isOpen, setIsOpen] = useState(false);
   const project = useRef(null);
   const experience = useRef(null);
-  const aboutme = useRef(null);
+  const about = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
-      behaviour: 'smooth'
+      behavior: 'smooth'
     })
+
+    setIsOpen(false);
   }
 
 
@@ -81,22 +83,22 @@ export default function Main() {
   }
   return (
     <div className="flex flex-col xsm:bg-black xl:bg-black xsm:min-w-screen xsm:h-full xl:w-full h-full w-screen">
-      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[70px] bg-zinc-950/80  fixed xl:space-y-0 xsm:space-y-20">
-        <div className="flex xl:flex-row xsm:flex-row justify-between   xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10  ">
+      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[70px] xl:space-y-0 bg-black xl:static xsm:fixed xsm:space-y-20">
+        <div className="flex sxl:flex-row xsm:flex-row justify-between  xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10 sxl:mx-20 xmd:mx-[60px]">
           <div className="">
             <text className="text-white/90 text-xl text-start font-ubuntu font-bold">
               Evan Darren Christanto
             </text>
           </div>
-          <ul className="flex xl:space-x-20 xl:flex-row xsm:flex-col xsm:items-start xl:items-center visile xl:flex xsm:hidden">
-            <div className="flex flex-col my-3">
-              <a
+          <ul className="flex sxl:space-x-10 sxl:flex-row xsm:flex-col xsm:items-start xl:items-center visile xl:flex xsm:hidden">
+            <div className="flex flex-col xl:my-3">
+              <li
 
-                href="/"
-                className="  text-xl text-sky-600  font-ubuntu font-bold"
+                onClick={() => scrollToSection(about)}
+                className="  text-xl text-white  hover:text-sky-600 font-ubuntu font-bold"
               >
-                Home
-              </a>
+                About
+              </li>
             </div>
             <li
               onClick={() => scrollToSection(project)}
@@ -115,55 +117,51 @@ export default function Main() {
 
             <a 
               href="/contact"
-              className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1"
+              className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  xl:my-1"
             >
               Contact Me
             </a>
             
             <a
               href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing"
-              className="text-white/90 flex justify-center text-xl rounded-lg hover:text-sky-600  h-10  xsm:items-start xl:items-center my-2"
+              className="text-white flex justify-center text-xl rounded-lg hover:text-sky-600  h-10  xsm:items-start xl:items-center xl:my-2"
             >
-              <text className="xsm:pr-11 xl:pr-0 py-1 font-bold font-ubuntu">
-                My Resume
+              <text className="xsm:pr-11 xl:pr-0 xl:py-1 font-bold font-ubuntu">
+                Resume
               </text>
             </a>
             
           </ul>
-          <div className="visible xl:hidden xsm:visible xl:mx-0  ">
+          <div className="visible xl:hidden sxl:visible xsm:visible xl:mx-0  ">
             <button onClick={togglenavbar}>
               {isOpen ? <X color="white" size="40"/> : <Menu color="white" size="40"/>}
             </button>
           </div>
         </div>
-        
-        
-        
-        
-
-        
       </div>
       {isOpen && (
-          <div className="h-40 mt-[70px] bg-zinc-950/80 text-white xsm:mx-10 fixed w-full" >
-              <ul className="flex flex-col space-y-5">
-                <a href="/" className="  text-xl text-sky-600  font-ubuntu font-bold">Home</a>
-                <a className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" href="/contact">Contact Me</a>
-                <a href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">My Resume</a>
-                <li className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" onClick={() => scrollToSection(project)}>My projects</li>
+          <div className="h-60 xsm:mt-[70px] fixed bg-zinc-950/80 text-white xsm:mx-10 xmd:mx-[60px] w-full " >
+              <ul className="flex flex-col space-y-5 sxl:mx-5">
+              <li className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" onClick={() => scrollToSection(about)}>About</li>
+              <li className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" onClick={() => scrollToSection(project)}>Projects</li>
+              <li className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" onClick={() => scrollToSection(experience)}>Experience</li>
+              <a className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" href="/contact">Contact Me</a>
+              <a href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">Resume</a>
+                
               </ul>
           </div>
 
         )}
-      <div className="xl:my-4 xsm: my-3 xl:mt-[70px] m-5">
-        <div className=" xl:flex-row xl:mt-32 my-20 xl:grid grid-cols-2 xsm: flex flex-col xsm: m-5 ">
-          <div className="self-center mx-auto xl:mt-0 xsm:mt-[10px]">
+      <div className="xl:my-4 xsm: my-3 m-5">
+        <div className=" sxl:flex-row xl:mt-[100px] my-20 xl:grid grid-cols-2 xsm: flex flex-col xsm: m-5 ">
+          <div className="self-center mx-auto xl:mt-0 xsm:mt-[60px]">
             <img
-              className="xl:rounded-full xsm:rounded-full xsm:w-[320px] xsm:h-[310px] xl:h-[515px] xl:w-[525px]"
+              className="xl:rounded-full xsm:rounded-full xsm:w-[320px] xsm:h-[310px] xmd:w-[400px] xmd:h-[390px] sxl:[h-450px] sxl:w-[400px] xl:h-[515px] xl:w-[525px]"
               src={gans}
               alt="profile"
             />
           </div>
-          <div className="xsm:mt-10 xl:self-center xsm:text-justify xl:text-start text-white/90 flex flex-col xl:mx-0">
+          <div className="xsm:mt-10 sxl:self-center xmd:mx-[60px] xsm:text-justify xl:text-start text-white/90 flex flex-col sxl:w-[440px] xl:w-[650px]  xl:mx-0 sxl:mx-10">
             <text className=" text-2xl font-bold">Hello, there! I am</text>
             <text className="text-6xl font-bold ">Evan Darren Christanto</text>
             <text className="font-bold text-2xl">
@@ -185,13 +183,13 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 xl:mt-10 xsm:mt-3 xsm:mx-10 "></div>
-      <div className="flex flex-col text-white font-bolf font-ubuntu xsm:mx-10 xl:mx-32">
-        <text className="text-3xl text-white font-bold xl:my-auto xsm:my-5">
-          About Me
-        </text>
-        <div className="xl:grid grid-cols-2 xsm:flex flex-col">
-          <div className="flex flex-col xsm:[300px] xl:w-[580px]">
+      <div ref={about} className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 xl:mt-10 xsm:mt-3 xmd:mx-[60px] sxl:mx-20 xsm:mx-10 "></div>
+      <div className="flex flex-col text-white font-bolf font-ubuntu sxl:mx-20 xsm:mx-10 xmd:mx-[60px] xl:mx-32">
+        <div className="sxl:grid grid-cols-2 xsm:flex flex-col">
+          <div className="flex flex-col xsm:[300px] xl:w-[580px] sxl:w-[430px]">
+            <text ref={about} className="text-3xl text-white font-bold xl:my-5 xsm:my-5">
+            About Me
+          </text>
             <text className="text-white my-5 font-bold font-ubuntu text-2xl">My Skills</text>
             <p className="text-white text-lg font-ubuntu text-justify text-opacity-80 ">
               In terms of technical skills, I have experiences in both react native for app development and react js for web development. 
@@ -206,37 +204,87 @@ export default function Main() {
               I have always been able to solve problems in front end development. For example there is a specific styling that I would like to have, I have always been able to implement it using my very own solutions. If I were to define one of my weaknesses, I would say that I can have a sudden anxiety, to speak in front of many people. I have always been trying to transform it into my strength instead, by taking a public speaking course in my university.{" "}
             </p>
           </div>
-          <div className="flex flex-col my-auto text-white/90 xsm:my-5 xl:my-auto xsm:w-[300px] xl:w-[700px]">
-            <div className="flex flex-row font-bold font-ubuntu text-6xl xsm:mx-6 xsm:mt-5 xl:mx-[70px]">
-              <Quote color="white" />
-              <text className="text-white/90 xsm:text-5xl xl:text-6xl font-bold font-ubuntu">
-                I can do all things
-              </text>
+          <div className="flex flex-col  text-white/90 xsm:my-5 xsm:w-full xl:w-full ">
+          <div className="flex flex-col w-full ">
+            <text className="text-white text-2xl font-bold xl:mt-[80px] ">Tech Stacks</text>
+            <div className="flex flex-row xl:mt-5  w-full xsm:mt-5 justify-between bg-black text-lg">
+              <div className="space-y-5">
+                <div className="flex flex-row ">
+                    <Play />
+                    <text>JavaScript</text>
+                </div>
+                <div className="flex flex-row ">
+                    <Play />
+                    <text>Supabase</text>
+                </div>
+                <div className="flex flex-row">
+                    <Play />
+                    <text>Java</text>
+                </div>
+                <div className="flex flex-row">
+                    <Play />
+                    <text>Python</text>
+                </div>
+                <div className="flex flex-row">
+                    <Play />
+                    <text>Supabase</text>
+                </div>
+                <div className="flex flex-row">
+                    <Play />
+                    <text>React Native</text>
+                </div>
+                <div className="flex flex-row">
+                    <Play />
+                    <text>React JS</text>
+                </div>
+
+              </div>
+              <div className="flex flex-col space-y-5">
+                
+                <div className="flex flex-row">
+                    <Play />
+                    <text>HTML</text>
+                </div>
+                <div className="flex flex-row">
+                    <Play />
+                    <text>CSS</text>
+                </div>
+                <div className="flex flex-row">
+                    <Play />
+                    <text>Tailwind CSS</text>
+                </div>
+                <div className="flex flex-row">
+                    <Play />
+                    <text>Git</text>
+                </div>
+                <div className="flex flex-row">
+                    <Play />
+                    <text>SQL</text>
+                </div>
+                <div className="flex flex-row">
+                    <Play />
+                    <text>Git</text>
+                </div>
+
+              </div>
+              
+              
             </div>
-            <text className=" xsm:text-5xl xl:text-6xl font-bold font-ubuntu xl:mx-24 xsm: mx-10  ">
-              through Christ
-            </text>
-            <text className=" xsm:text-5xl xl:text-6xl font-bold font-ubuntu xl:mx-24 xsm:mx-10 ">
-              who strengthens
-            </text>
-            <div className="flex flex-row font-bold font-ubuntu text-6xl xl:mx-0 xsm:mx-10">
-              <text className=" xsm:text-5xl xl:text-6xl font-bold font-ubuntu xl:ml-24">
-                me.
-              </text>
-              <Quote color="white" />
+
             </div>
+            
           </div>
         </div>
       </div>
-      <text className="text-white/90 font-bold text-3xl xl:my-10 xsm: my-5 xl:mx-32 xsm:mx-10 font-ubuntu">
-        My Experience
+      <text ref={experience} className="xmd:mx-[60px] text-white/90 font-bold text-3xl xl:my-10 xsm: my-5 sxl:mx-20 xl:mx-32 xsm:mx-10 font-ubuntu">
+        Experience
       </text>
-      <div className="flex flex-col text-white font-bolf font-ubuntu xsm:mx-10 xl:mx-32">
+      <div className="flex flex-col text-white font-bolf font-ubuntu xsm:mx-10 xl:mx-32 sxl:mx-20 xmd:mx-[60px]">
         <text className="text-2xl text-white/90 font-bold xl:my-auto xsm:my-5">
           NUSSU CommIT Technical Team Member
         </text>
-        <div className="xl:grid grid-cols-2 xsm:flex flex-col">
-          <div className="flex flex-col xsm:[300px] xl:w-[580px]">
+        <div className="sxl:grid grid-cols-2 xsm:flex flex-col">
+          <div className="flex flex-col xsm:[300px] xl:w-[580px] sxl:w-[430px]">
             <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
               I just entered NUSSU CommIT Technical Team Member in September,
               2023. I performed here as an experienced frontend developer that
@@ -248,7 +296,7 @@ export default function Main() {
           </div>
           <img
             src={commits}
-            className="w-[640px] mt-7 rounded-lg"
+            className="w-full mt-7 rounded-lg"
             alt="ya maap"
           />
         </div>
@@ -256,8 +304,8 @@ export default function Main() {
         <text className="text-2xl text-white/90 font-bold xl:my-auto xsm:my-5">
           NUANSA Set and Props Director
         </text>
-        <div className="xl:grid grid-cols-2 xsm:flex flex-col">
-          <div className="flex flex-col xsm:[300px] xl:w-[580px]">
+        <div className="sxl:grid grid-cols-2 xsm:flex flex-col ">
+          <div className="flex flex-col xsm:[300px] xl:w-[580px] sxl:w-[430px]">
             <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
               NUANSA is an esteemed Indonesian drama musical theater production
               at the National University of Singapore (NUS). Before the COVID19
@@ -276,7 +324,7 @@ export default function Main() {
           </div>
           <img
             src={nuansas}
-            className="w-[640px] mt-7 rounded-lg"
+            className="w-full mt-7 rounded-lg"
             alt="ya maap"
           />
         </div>
@@ -284,8 +332,8 @@ export default function Main() {
         <text className="text-2xl text-white/90 font-bold xl:my-auto xsm:my-5">
           Data Analyst Internship
         </text>
-        <div className="xl:grid grid-cols-2 xsm:flex flex-col">
-          <div className="flex flex-col xsm:[300px] xl:w-[580px]">
+        <div className="sxl:grid grid-cols-2 xsm:flex flex-col">
+          <div className="flex flex-col xsm:[300px] xl:w-[580px] sxl:w-[430px]">
             <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
               During summer, I did my very first internship in Indonesia which
               is in PT Catur Kimiatama Agung. It is a company that operates with
@@ -304,23 +352,23 @@ export default function Main() {
           </div>
           <img
             src={bigdatas}
-            className="w-[640px] mt-7 rounded-lg"
+            className="w-full mt-7 rounded-lg"
             alt="ya maap"
           />
         </div>
       </div>
-      <text   ref={project}  className="text-white/90 font-bold text-3xl xl:my-10 xsm:my-4 xl:mx-32 xsm:mx-10 font-ubuntu">
-        My Projects
+      <text   ref={project}  className="text-white/90 xmd:mx-[60px] font-bold text-3xl xl:my-10 xsm:my-5 xl:mx-32 xsm:mx-10 font-ubuntu sxl:mx-20">
+        Projects
       </text>
-      <div  className="xl:grid grid-cols-3 xl:gap-7 xsm:flex flex-col m-5 xsm:space-y-10 xl:space-y-0 items-center xsm:mx-10 xl:mx-32">
+      <div  className="sxl:grid grid-cols-3 xmd:mx-[60px] xl:h-[1000px] sxl:gap-5 xl:gap-7 xsm:flex flex-col m-5 xsm:space-y-10 sxl:space-y-0 items-center xsm:mx-10 xl:mx-32 sxl:mx-20">
         {data.map((product, index) => (
           <div
-            className=" bg-zinc-800 text-white transition ease-in-out delay-175 hover:bg-sky-700 hover:text-white hover:-translate-y-1 hover:scale-105 font-ubuntu h-full rounded-lg flex flex-col"
+            className=" bg-zinc-800 text-white transition ease-in-out delay-175 hover:bg-sky-700 hover:text-white hover:-translate-y-1 hover:scale-105 font-ubuntu xsm:h-full sxl:h-full rounded-lg flex flex-col"
             key={index}
           >
             <div>
               <img
-                className="xl:h-[250px] w-full rounded-t-lg"
+                className="xl:h-[250px] sxl:h-[200px] w-full rounded-t-lg"
                 src={product.photo}
                 alt="turu deck"
               />
@@ -346,12 +394,12 @@ export default function Main() {
         ))}
       </div>
 
-      <div className="mx-32 xsm:my-3 xl:my-1">
+      <div className="mx-32 xsm:my-3 xl:my-1 ">
         <text className="text-white xsm:flex justify-center xl:self-end font-ubuntu font-bold text-3xl">
           Social
         </text>
       </div>
-      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm:m-5 xsm:mt-3 xsm:mx-10"></div>
+      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 sxl:mx-20 h-[2px] xsm:m-5 xsm:mt-3 xsm:mx-10"></div>
       <div className="flex flex-row justify-center space-x-5 mb-3">
         <a href="https://github.com/EvanCh08">
           <Github color="white" size="35" />

@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xsm: "380px"
+        xsm: "380px",
+        xmd: "768px",
+        sxl: "1024px",
       },
       fontFamily: {
         lato: ['Lato'],

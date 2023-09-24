@@ -38,68 +38,63 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col bg-black xsm:h-full xl:h-screen">
-      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[70px] bg-zinc-950/80 fixed xl:space-y-0 xsm:space-y-20">
-        <div className="flex xl:flex-row xsm:flex-row justify-between  xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10  ">
+      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[70px] xl:space-y-0 bg-black xl:static xsm:fixed xsm:space-y-20">
+        <div className="flex xl:flex-row xsm:flex-row justify-between  xl:items-center w-full h-16 xl:m-32 m-6 xsm:mx-10 sxl:mx-20 xmd:mx-[60px] ">
           <div className="">
             <text className="text-white/90 text-xl text-start font-ubuntu font-bold">
               Evan Darren Christanto
             </text>
           </div>
-          <div className="flex xl:space-x-20 xl:flex-row xsm:flex-col xsm:items-start xl:items-center visile xl:flex xsm:hidden">
+          <ul className="flex xl:space-x-10 xl:flex-row xsm:flex-col xsm:items-start xl:items-center visile xl:flex xsm:hidden">
             <div className="flex flex-col my-3">
-              <a
+              <a 
                 href="/"
-                className="  hover:text-sky-600 text-xl text-white font-ubuntu font-bold"
+                className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1"
               >
                 Home
               </a>
             </div>
-            <a
-              href="/contact"
-              className=" text-xl font-bold text-sky-600 font-ubuntu  my-1"
-            >
-              Contact Me
-            </a>
+            
+
+            
+            
             <a
               href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing"
               className="text-white/90 flex justify-center text-xl rounded-lg hover:text-sky-600  h-10  xsm:items-start xl:items-center my-2"
             >
               <text className="xsm:pr-11 xl:pr-0 py-1 font-bold font-ubuntu">
-                My Resume
+                Resume
               </text>
             </a>
-          </div>
-          <div className="visible xl:hidden xsm:visible xl:mx-0 bg-zinc-950/80 ">
+            
+          </ul>
+          <div className="visible xl:hidden xsm:visible xl:mx-0  ">
             <button onClick={togglenavbar}>
               {isOpen ? <X color="white" size="40"/> : <Menu color="white" size="40"/>}
             </button>
           </div>
         </div>
-        
-        
-        
-
-        
       </div>
       {isOpen && (
-        <div className="h-40 w-full mt-[70px] bg-zinc-950/80 text-white xsm:mx-10 fixed" >
-          <div className="flex flex-col space-y-5 fixed">
-            <a href="/" className="  text-xl   hover:text-sky-600 font-ubuntu font-bold">Home</a>
-            <a className=" text-xl font-bold text-sky-600  font-ubuntu  my-1" href="/contact">Contact Me</a>
-            <a href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">My Resume</a>
+          <div className="h-60 xsm:mt-[70px] xmd:mx-[60px] fixed bg-zinc-950/80 text-white xsm:mx-10 sxl:mx-20 w-full" >
+              <ul className="flex flex-col space-y-5">
+              <a className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" href="/">Home</a>
+      
+              <a href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">Resume</a>
+          
+              </ul>
           </div>
-      </div>
 
         )}
 
-      <div className="xl:mt-[200px] xsm:mt-[270px] xsm:mx-auto xl:mx-32">
+      <div className="xl:mt-[125px] xsm:mt-[200px] xsm:mx-auto xl:mx-32">
         <text className="text-white font-bold text-4xl xl:my-5 xsm: my-4 font-ubuntu">
           Contact Me
         </text>
       </div>
 
-      <div className="xl:grid grid-cols-2 xsm:flex flex-col xsm:mx-10 xl:mx-0 ">
-        <div className="border-2 border-white/85 flex flex-col xsm:mx-32 xsm:ml-0 xl:ml-32 xl:mx-0 mt-5 xsm:h-[350px] xsm:w-full xl:h-[400px] xl:w-[550px] rounded-xl">
+      <div className="xl:grid xmd:mx-[60px] sxl:mx-20 grid-cols-2 xsm:flex flex-col xsm:mx-10 xl:mx-0 ">
+        <div className="border-2 border-white/85 flex flex-col xsm:mx-32 xsm:ml-0 xl:ml-32 xl:mx-0 mt-5 xsm:h-[350px] xsm:w-full xl:h-[400px] xl:w-[550px]  rounded-xl">
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -146,8 +141,9 @@ export default function Contact() {
           
         </div>
         <div className="my-auto">
-            <div className="flex flex-col xsm:[300px] xl:w-[550px] xl:mx-[80px]">
-              <p className="text-white mt-5 text-xl font-ubuntu text-justify text-opacity-80 my-auto">
+            <div className="flex flex-col xsm:[300px] xl:w-[550px] xl:mx-[80px] xl:mt-0 xsm:mt-5">
+              <text className="text-white text-5xl font-bold font-ubuntu xsm:text-center xl:mt-0 sxl:mt-5 xsm:mt-5">Let's get in touch!</text>
+              <p className="text-white mt-3 text-xl font-ubuntu text-justify text-opacity-80 my-auto">
                 Are you interested in my skills and experiences? Wondering how I
                 can reach you? Please do not hesitate to contact me by inserting
                 your full name, email, and messages that you would like to send
