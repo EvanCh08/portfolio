@@ -186,7 +186,7 @@ export default function Main() {
       <div ref={about} className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm: m-5 xl:mt-10 xsm:mt-3 xmd:mx-[60px] sxl:mx-20 xsm:mx-10 "></div>
       <div className="flex flex-col text-white font-bolf font-ubuntu sxl:mx-20 xsm:mx-10 xmd:mx-[60px] xl:mx-32">
         <div className="sxl:grid grid-cols-2 xsm:flex flex-col">
-          <div className="flex flex-col xsm:[300px] xl:w-[580px] sxl:w-[430px]">
+          <div className="flex flex-col xsm:[300px] xl:w-[480px] sxl:w-[430px] ">
             <text ref={about} className="text-3xl text-white font-bold xl:my-5 xsm:my-5">
             About Me
           </text>
@@ -213,10 +213,7 @@ export default function Main() {
                     <Play />
                     <text>JavaScript</text>
                 </div>
-                <div className="flex flex-row ">
-                    <Play />
-                    <text>Supabase</text>
-                </div>
+                
                 <div className="flex flex-row">
                     <Play />
                     <text>Java</text>
@@ -261,10 +258,7 @@ export default function Main() {
                     <Play />
                     <text>SQL</text>
                 </div>
-                <div className="flex flex-row">
-                    <Play />
-                    <text>Git</text>
-                </div>
+                
 
               </div>
               
@@ -284,7 +278,7 @@ export default function Main() {
           NUSSU CommIT Technical Team Member
         </text>
         <div className="sxl:grid grid-cols-2 xsm:flex flex-col">
-          <div className="flex flex-col xsm:[300px] xl:w-[580px] sxl:w-[430px]">
+          <div className="flex flex-col xsm:[300px] xl:w-[480px]  sxl:w-[430px]">
             <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
               I just entered NUSSU CommIT Technical Team Member in September,
               2023. I performed here as an experienced frontend developer that
@@ -305,7 +299,7 @@ export default function Main() {
           NUANSA Set and Props Director
         </text>
         <div className="sxl:grid grid-cols-2 xsm:flex flex-col ">
-          <div className="flex flex-col xsm:[300px] xl:w-[580px] sxl:w-[430px]">
+          <div className="flex flex-col xsm:[300px] xl:w-[480px] sxl:w-[430px]">
             <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
               NUANSA is an esteemed Indonesian drama musical theater production
               at the National University of Singapore (NUS). Before the COVID19
@@ -329,11 +323,11 @@ export default function Main() {
           />
         </div>
 
-        <text className="text-2xl text-white/90 font-bold xl:my-auto xsm:my-5">
+        <text className="text-2xl text-white/90 font-bold xl:my-auto xl:mt-10 xsm:my-5">
           Data Analyst Internship
         </text>
         <div className="sxl:grid grid-cols-2 xsm:flex flex-col">
-          <div className="flex flex-col xsm:[300px] xl:w-[580px] sxl:w-[430px]">
+          <div className="flex flex-col xsm:[300px] xl:w-[480px] sxl:w-[430px]">
             <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
               During summer, I did my very first internship in Indonesia which
               is in PT Catur Kimiatama Agung. It is a company that operates with
