@@ -16,7 +16,7 @@ import {
   Quote,
   X, Menu
 } from "lucide-react";
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 export default function Main() {
   const data = [
@@ -59,6 +59,17 @@ export default function Main() {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
+  const project = useRef(null);
+  const experience = useRef(null);
+  const aboutme = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behaviour: 'smooth'
+    })
+  }
+
 
   const togglenavbar = () => {
     if (isOpen === false) {
@@ -70,28 +81,45 @@ export default function Main() {
   }
   return (
     <div className="flex flex-col xsm:bg-black xl:bg-black xsm:min-w-screen xsm:h-full xl:w-full h-full w-screen">
-      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[70px] bg-zinc-950/80 fixed xl:space-y-0 xsm:space-y-20">
+      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[70px] bg-zinc-950/80  fixed xl:space-y-0 xsm:space-y-20">
         <div className="flex xl:flex-row xsm:flex-row justify-between   xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10  ">
           <div className="">
             <text className="text-white/90 text-xl text-start font-ubuntu font-bold">
               Evan Darren Christanto
             </text>
           </div>
-          <div className="flex xl:space-x-20 xl:flex-row xsm:flex-col xsm:items-start xl:items-center visile xl:flex xsm:hidden">
+          <ul className="flex xl:space-x-20 xl:flex-row xsm:flex-col xsm:items-start xl:items-center visile xl:flex xsm:hidden">
             <div className="flex flex-col my-3">
               <a
+
                 href="/"
                 className="  text-xl text-sky-600  font-ubuntu font-bold"
               >
                 Home
               </a>
             </div>
-            <a
+            <li
+              onClick={() => scrollToSection(project)}
+
+              className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  "
+            >
+              Projects
+            </li>
+            <li
+              onClick={() => scrollToSection(experience)}
+
+              className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  "
+            >
+              Experience
+            </li>
+
+            <a 
               href="/contact"
               className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1"
             >
               Contact Me
             </a>
+            
             <a
               href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing"
               className="text-white/90 flex justify-center text-xl rounded-lg hover:text-sky-600  h-10  xsm:items-start xl:items-center my-2"
@@ -100,7 +128,8 @@ export default function Main() {
                 My Resume
               </text>
             </a>
-          </div>
+            
+          </ul>
           <div className="visible xl:hidden xsm:visible xl:mx-0  ">
             <button onClick={togglenavbar}>
               {isOpen ? <X color="white" size="40"/> : <Menu color="white" size="40"/>}
@@ -116,11 +145,12 @@ export default function Main() {
       </div>
       {isOpen && (
           <div className="h-40 mt-[70px] bg-zinc-950/80 text-white xsm:mx-10 fixed w-full" >
-              <div className="flex flex-col space-y-5">
+              <ul className="flex flex-col space-y-5">
                 <a href="/" className="  text-xl text-sky-600  font-ubuntu font-bold">Home</a>
                 <a className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" href="/contact">Contact Me</a>
                 <a href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">My Resume</a>
-              </div>
+                <li className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" onClick={() => scrollToSection(project)}>My projects</li>
+              </ul>
           </div>
 
         )}
@@ -279,13 +309,13 @@ export default function Main() {
           />
         </div>
       </div>
-      <text className="text-white/90 font-bold text-3xl xl:my-10 xsm:my-4 xl:mx-32 xsm:mx-10 font-ubuntu">
+      <text   ref={project}  className="text-white/90 font-bold text-3xl xl:my-10 xsm:my-4 xl:mx-32 xsm:mx-10 font-ubuntu">
         My Projects
       </text>
-      <div className="xl:grid grid-cols-3 xl:gap-7 xsm:flex flex-col m-5 xsm:space-y-10 xl:space-y-0 items-center xsm:mx-10 xl:mx-32">
+      <div  className="xl:grid grid-cols-3 xl:gap-7 xsm:flex flex-col m-5 xsm:space-y-10 xl:space-y-0 items-center xsm:mx-10 xl:mx-32">
         {data.map((product, index) => (
           <div
-            className=" bg-zinc-800 text-white transition ease-in-out delay-175 hover:bg-sky-700 hover:text-white hover:-translate-y-1 hover:scale-105 font-ubuntu h-[500px] rounded-lg flex flex-col"
+            className=" bg-zinc-800 text-white transition ease-in-out delay-175 hover:bg-sky-700 hover:text-white hover:-translate-y-1 hover:scale-105 font-ubuntu h-full rounded-lg flex flex-col"
             key={index}
           >
             <div>
