@@ -406,7 +406,7 @@ export default function Main() {
                 className="flex flex-row items-center"
               >
                 <ExternalLink className="h-4" />
-                <span className="text-sm ml-1">Visit Website!</span>
+                <span className="text-sm ml-1">Visit Project</span>
               </a>
             </div>
           </div>
