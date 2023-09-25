@@ -59,7 +59,7 @@ export default function Contact() {
             
             
             <a
-              href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing"
+              href="https://drive.google.com/file/d/1E4sXZRROnNSU8PXlx5X6BQ_nwbdziV0W/view?usp=sharing"
               className="text-white/90 flex justify-center text-xl rounded-lg hover:text-sky-600  h-10  xsm:items-start xl:items-center my-2"
             >
               <text className="xsm:pr-11 xl:pr-0 py-1 font-bold font-ubuntu">
@@ -80,7 +80,7 @@ export default function Contact() {
               <ul className="flex flex-col space-y-5">
               <a className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" href="/">Home</a>
       
-              <a href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">Resume</a>
+              <a href="https://drive.google.com/file/d/1E4sXZRROnNSU8PXlx5X6BQ_nwbdziV0W/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">Resume</a>
           
               </ul>
           </div>

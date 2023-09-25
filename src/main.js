@@ -123,7 +123,7 @@ export default function Main() {
             </a>
             
             <a
-              href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing"
+              href="https://drive.google.com/file/d/1E4sXZRROnNSU8PXlx5X6BQ_nwbdziV0W/view?usp=sharing"
               className="text-white flex justify-center text-xl rounded-lg hover:text-sky-600  h-10  xsm:items-start xl:items-center xl:my-2"
             >
               <text className="xsm:pr-11 xl:pr-0 xl:py-1 font-bold font-ubuntu">
@@ -146,7 +146,7 @@ export default function Main() {
               <li className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" onClick={() => scrollToSection(project)}>Projects</li>
               <li className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" onClick={() => scrollToSection(experience)}>Experience</li>
               <a className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" href="/contact">Contact Me</a>
-              <a href="https://drive.google.com/file/d/1UXxWLY8_Hi5FnF-QUSU9jmvG1gpubJv3/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">Resume</a>
+              <a href="https://drive.google.com/file/d/1E4sXZRROnNSU8PXlx5X6BQ_nwbdziV0W/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">Resume</a>
                 
               </ul>
           </div>
