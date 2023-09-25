@@ -162,16 +162,13 @@ export default function Main() {
             />
           </div>
           <div className="xsm:mt-10 sxl:self-center xmd:mx-[60px] xsm:text-justify xl:text-start text-white/90 flex flex-col sxl:w-[440px] xl:w-[650px]  xl:mx-0 sxl:mx-10">
-            <text className=" text-2xl font-bold">Hello, there! I am</text>
+            <text className=" text-2xl font-bold">Hey! I am</text>
             <text className="text-6xl font-bold ">Evan Darren Christanto</text>
             <text className="font-bold text-2xl">
-              A Frontend Developer Studying at NUS
+              A passionate Software Engineer who loves to build web and application!
             </text>
             <text className="mt-1 text-xl text-opacity-80">
-              I am a web and app developer with experienced for over 1 year{" "}
-            </text>
-            <text className="text-xl mt-1 text-opacity-80">
-              I have been developing websites and mobile application!{" "}
+              Currently, I am a sophomore Business Analytics student in the National University of Singapore (NUS) {" "}
             </text>
             <a
               href="/contact"
