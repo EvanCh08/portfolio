@@ -58,14 +58,7 @@ export default function Contact() {
 
             
             
-            <a
-              href="https://drive.google.com/file/d/1E4sXZRROnNSU8PXlx5X6BQ_nwbdziV0W/view?usp=sharing"
-              className="text-white/90 flex justify-center text-xl rounded-lg hover:text-sky-600  h-10  xsm:items-start xl:items-center my-2"
-            >
-              <text className="xsm:pr-11 xl:pr-0 py-1 font-bold font-ubuntu">
-                Resume
-              </text>
-            </a>
+          
             
           </ul>
           <div className="visible xl:hidden xsm:visible xl:mx-0  ">
@@ -76,11 +69,9 @@ export default function Contact() {
         </div>
       </div>
       {isOpen && (
-          <div className="h-60 xsm:mt-[70px] xmd:mx-[60px] fixed bg-zinc-950/80 text-white xsm:mx-10 sxl:mx-20 w-full" >
+          <div className="h-[50px] xsm:mt-[70px] xmd:mx-[60px] fixed bg-zinc-950/80 text-white xsm:mx-10 sxl:mx-20 w-full" >
               <ul className="flex flex-col space-y-5">
               <a className=" text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1" href="/">Home</a>
-      
-              <a href="https://drive.google.com/file/d/1E4sXZRROnNSU8PXlx5X6BQ_nwbdziV0W/view?usp=sharing" className="text-xl font-bold hover:text-sky-600 text-white font-ubuntu  my-1">Resume</a>
           
               </ul>
           </div>
