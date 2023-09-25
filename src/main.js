@@ -168,7 +168,7 @@ export default function Main() {
               A passionate Software Engineer who loves to build web and application!
             </text>
             <text className="mt-1 text-xl text-opacity-80">
-              I am a currently sophomore Business Analytics student in the National University of Singapore (NUS) {" "}
+              I am a currently Sophomore Business Analytics student in the National University of Singapore (NUS) {" "}
             </text>
             <a
               href="/contact"
