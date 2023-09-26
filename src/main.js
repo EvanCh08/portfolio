@@ -172,8 +172,8 @@ export default function Main() {
             <text className=" text-2xl font-bold">Hey! I am</text>
             <text className="text-6xl font-bold ">Evan Darren Christanto</text>
             <text className="font-bold text-2xl">
-              A passionate Software Engineer who loves to build web and
-              application!
+              A passionate Software Engineer who loves to build websites and
+              applications!
             </text>
             <text className="mt-1 text-xl text-opacity-80">
               I am currently a Sophomore Business Analytics student in the
