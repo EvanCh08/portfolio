@@ -8,6 +8,7 @@ import nuansas from "./nuansa.jpeg";
 import bigdatas from "./bigdata.webp";
 import commits from "./commit.jpeg";
 import discretes from "./discrete.jpeg";
+import cleaning from "./datacleaning.jpeg";
 import {
   Github,
   ExternalLink,
@@ -22,6 +23,25 @@ import { useState, useRef } from "react";
 export default function Main() {
   const data = [
     {
+      name: "Data Cleaning Projects",
+      photo: cleaning,
+      link: "https://github.com/EvanCh08/Data-Cleaning",
+      desc: "Here are some data cleaning projects that I did using SQL and Pandas. In here, I demonstrated my ability to clean data by considering NaN values, column names, and others to make it more neat."
+    },
+    {
+      name: "Airline Analysis",
+      photo: planes,
+      link: "https://docs.google.com/presentation/d/1sTyUDye3xVW0hV3Yd1CSoTNCy5OB3RsC/edit#slide=id.p1",
+      desc: "In BT2102 module, alongside with my other 5 teammates, we created a project about airline analysis, using SQl, Tableau, and Microsoft Powerpoint. I performed as a data cleaner for this job, so I managed a lot in using SQL. I also executed some data visualization using tableau.",
+    },
+    {
+      name: "Tiktok",
+      photo: tiktoks,
+      link: "https://github.com/kyledilao777/Tiktok-Hack-2023",
+      desc: "During Tiktok Hackathon, I worked as a frontend developer that is tasked to make sure that all the features are connected and attracts many people to use our application. Tech stacks we used are react native, supabase, and tailwind CSS.",
+    },
+
+    {
       name: "DES",
       photo: discretes,
       link: "https://github.com/EvanCh08/Discrete-Event-Simulation",
@@ -33,30 +53,23 @@ export default function Main() {
       link: "https://github.com/EvanCh08/SS2AM-Orbital-Project",
       desc: "In this project, I performed as a frontend and backend co-developer. Some features we have are login sign up page, splitbill page, and register menu page for restaurants.",
     },
-    {
-      name: "Tiktok",
-      photo: tiktoks,
-      link: "https://github.com/kyledilao777/Tiktok-Hack-2023",
-      desc: "During Tiktok Hackathon, I worked as a frontend developer that is tasked to make sure that all the features are connected and attracts many people to use our application. Tech stacks we used are react native, supabase, and tailwind CSS.",
-    },
-    {
-      name: "Airline Analysis",
-      photo: planes,
-      link: "https://docs.google.com/presentation/d/1sTyUDye3xVW0hV3Yd1CSoTNCy5OB3RsC/edit#slide=id.p1",
-      desc: "In BT2102 module, alongside with my other 5 teammates, we created a project about airline analysis, using SQl, Tableau, and Microsoft Powerpoint. I performed as a data cleaner for this job, so I managed a lot in using SQL. I also executed some data visualization using tableau.",
-    },
+    
+    
     {
       name: "Bus API",
       photo: buses,
       link: "https://github.com/EvanCh08/Bus-API",
       desc: "Bus API is a project done when I took CS2030, Programming Methodology II. I used CompletableFuture and functional programming concepts to solve this project. In the end, the project functions by calling a destination from one to another and the program will display the possible bus routes that the customers can take.",
     },
+
+    
     {
       name: "Eating Analysis",
       photo: vegetable,
       link: "https://sites.google.com/view/evaneatinghabit?usp=sharing",
       desc: "During my summer holiday, I did this project about eating habit anaysis, whereby I analyzed my eating habit in a 5-day window. After further analysis through charts, graphs, and the amount of nutrients I got, I made a conclusion that I must fix my eating habit.",
     },
+    
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -81,7 +94,7 @@ export default function Main() {
     }
   };
   return (
-    <div className="flex flex-col xsm:bg-black xl:bg-black xsm:min-w-screen xsm:h-full xl:w-full h-full w-screen">
+    <div className="flex flex-col bg-black xsm:min-w-screen xsm:h-full xl:w-full  w-screen">
       <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[70px] xl:space-y-0 bg-black xl:static xsm:fixed xsm:space-y-20">
         <div className="flex sxl:flex-row xsm:flex-row justify-between  xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10 sxl:mx-20 xmd:mx-[60px]">
           <div className="">
@@ -413,7 +426,7 @@ export default function Main() {
         ))}
       </div>
 
-      <div className="mx-32 xsm:my-3 xl:my-1 ">
+      <div className="mx-32 xsm:my-3 xl:mt-[400px] ">
         <text className="text-white xsm:flex justify-center xl:self-end font-ubuntu font-bold text-3xl">
           Social
         </text>
