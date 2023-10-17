@@ -103,8 +103,8 @@ export default function Main() {
     }
   };
   return (
-    <div className="flex flex-col bg-black xsm:min-w-screen xsm:h-full xl:w-full  w-screen">
-      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[70px] xl:space-y-0 bg-black xl:static xsm:fixed xsm:space-y-20">
+    <div className="flex flex-col bg-black xsm:h-full xl:w-full w-full">
+      <div className="flex flex-row xl:items-center xsm:items-start w-full xl:h-20 xsm:h-[70px] xl:space-y-0 bg-black xl:static xsm:fixed xsm:space-y-20">
         <div className="flex sxl:flex-row xsm:flex-row justify-between  xl:items-center  w-full h-16 xl:m-32 m-6 xsm:mx-10 sxl:mx-20 xmd:mx-[60px]">
           <div className="">
             <text className="text-white/90 text-xl text-start font-ubuntu font-bold">
@@ -238,7 +238,7 @@ export default function Main() {
             <text className="text-white my-5 font-bold font-ubuntu text-2xl">
               What I value in Life
             </text>
-            <p className="text-white text-xl font-ubuntu text-justify text-opacity-80 ">
+            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80">
               I value the principles of setting the right purpose and believe. I
               have always set the purpose of things that I am doing in my life.
               Setting the purpose will give us the idea to take actions. Next
@@ -413,7 +413,7 @@ export default function Main() {
         ref={project}
         className="text-white/90 xmd:mx-[60px] font-bold text-3xl xl:my-10 xsm:my-5 xl:mx-32 xsm:mx-10 font-ubuntu sxl:mx-20"
       >
-        Projects and HACKathons/STARTathons
+        Projects and HACKathons
       </text>
       <div className="sxl:grid grid-cols-3 xmd:mx-[60px] xl:h-[1000px] sxl:gap-5 xl:gap-7 xsm:flex flex-col m-5 xsm:space-y-10 sxl:space-y-0 items-center xsm:mx-10 xl:mx-32 sxl:mx-20">
         {data.map((product, index) => (
@@ -454,7 +454,7 @@ export default function Main() {
           Social
         </text>
       </div>
-      <div className="bg-white rounded-xl xl:w-50 xl:mx-32 sxl:mx-20 h-[2px] xsm:m-5 xsm:mt-3 xsm:mx-10"></div>
+      <div className="bg-white rounded-xl xl:w-50 xmd:mx-25 xl:mx-32 sxl:mx-25 h-[2px] xsm:m-5 xsm:mt-3 xsm:mx-10"></div>
       <div className="flex flex-row justify-center space-x-5 mb-3">
         <a href="https://github.com/EvanCh08">
           <Github color="white" size="35" />

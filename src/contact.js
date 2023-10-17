@@ -37,9 +37,9 @@ export default function Contact() {
   }
 
   return (
-    <div className="flex flex-col bg-black xsm:h-full xl:h-screen">
-      <div className="flex flex-row xl:items-center xsm:items-start w-screen xl:h-20 xsm:h-[70px] xl:space-y-0 bg-black xl:static xsm:fixed xsm:space-y-20">
-        <div className="flex xl:flex-row xsm:flex-row justify-between  xl:items-center w-full h-16 xl:m-32 m-6 xsm:mx-10 sxl:mx-20 xmd:mx-[60px] ">
+    <div className="flex flex-col bg-black h-full xl:w-full w-full">
+      <div className="flex flex-row xl:items-center xsm:items-start w-full xl:h-20 xsm:h-[70px] xl:space-y-0 bg-black xl:static xsm:fixed xsm:space-y-20">
+        <div className="flex xl:flex-row xsm:flex-row justify-between xl:items-center w-full h-16 xl:m-32 m-6 xsm:mx-10 sxl:mx-20 xmd:mx-[60px] ">
           <div className="">
             <text className="text-white/90 text-xl text-start font-ubuntu font-bold">
               Evan Darren Christanto
@@ -54,12 +54,6 @@ export default function Contact() {
                 Home
               </a>
             </div>
-            
-
-            
-            
-          
-            
           </ul>
           <div className="visible xl:hidden xsm:visible xl:mx-0  ">
             <button onClick={togglenavbar}>
@@ -151,7 +145,7 @@ export default function Contact() {
         </text>
       </div>
       <div className="bg-white rounded-xl xl:w-50 xl:mx-32 h-[2px] xsm:m-5 xsm:mt-3 xsm:mx-10"></div>
-      <div className="flex flex-row justify-center space-x-5 mb-3 ">
+      <div className="flex flex-row justify-center space-x-5 mb-20 ">
         <a href="https://github.com/EvanCh08">
           <Github color="white" size="35" />
         </a>
