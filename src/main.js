@@ -9,6 +9,7 @@ import bigdatas from "./bigdata.webp";
 import commits from "./commit.jpeg";
 import discretes from "./discrete.jpeg";
 import cleaning from "./datacleaning.jpeg";
+import catalyst from "./stunzeed.jpeg";
 import {
   Github,
   ExternalLink,
@@ -34,6 +35,14 @@ export default function Main() {
       link: "https://docs.google.com/presentation/d/1sTyUDye3xVW0hV3Yd1CSoTNCy5OB3RsC/edit#slide=id.p1",
       desc: "In BT2102 module, alongside with my other 5 teammates, we created a project about airline analysis, using SQl, Tableau, and Microsoft Powerpoint. I performed as a data cleaner for this job, so I managed a lot in using SQL. I also executed some data visualization using tableau.",
     },
+    {
+      name: "SMETRICS Catalyst X AI",
+      photo: catalyst,
+      link: "https://docs.google.com/presentation/d/1sTyUDye3xVW0hV3Yd1CSoTNCy5OB3RsC/edit#slide=id.p1",
+      desc: "As a team, we proposed an idea address climate change by tackling down carbon emissions by SMEs in Indonesia. We gather data from MNCs and Sustainability Reports to be used as our training data for our AI model. We use the technique of Transfer Learning to do predictive analytics upon carbon emission and prescripive analytics on recommendations",
+    },
+
+
     {
       name: "Tiktok",
       photo: tiktoks,
@@ -185,8 +194,7 @@ export default function Main() {
             <text className=" text-2xl font-bold">Hey! I am</text>
             <text className="text-6xl font-bold ">Evan Darren Christanto</text>
             <text className="font-bold text-2xl">
-              A passionate Software Engineer who loves to build websites and
-              applications!
+              A passionate Business and Data Analyst who loves to analyze and manage data!
             </text>
             <text className="mt-1 text-xl text-opacity-80">
               I am currently a Sophomore Business Analytics student in the
@@ -218,17 +226,19 @@ export default function Main() {
             <text className="text-white my-5 font-bold font-ubuntu text-2xl">
               My Skills
             </text>
-            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80 ">
-              In terms of technical skills, I have experiences in both react
+            <p className="text-white text-xl font-ubuntu text-justify text-opacity-80 ">
+              In terms of technical skills, I have an advanced experience in python programming language, R programming language, and SQL.
+              I usually use Pandas or MySQL to analyze and clean dataset. For data visualizatoin, I use Pandas Seaborn and Tableau. For machine regression analysis, I use R studio to do this.
+              Besides that, I also excel in Microdoft Word, Microsoft PowerPoint, and Microsoft Excel.
+              Additionally, I also excel in both react
               native for app development and react js for web development. I
               performed well with React Native, React JS, Supabase, HTML, CSS,
-              and Tailwind CSS. In addition to that, I have also touched on
-              analytical tools, SQL, Tableau, and python for data analytics.{" "}
+              and Tailwind CSS. {" "}
             </p>
             <text className="text-white my-5 font-bold font-ubuntu text-2xl">
               What I value in Life
             </text>
-            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80 ">
+            <p className="text-white text-xl font-ubuntu text-justify text-opacity-80 ">
               I value the principles of setting the right purpose and believe. I
               have always set the purpose of things that I am doing in my life.
               Setting the purpose will give us the idea to take actions. Next
@@ -239,7 +249,7 @@ export default function Main() {
             <text className="text-white my-5 font-bold font-ubuntu text-2xl">
               Strength and Weakness
             </text>
-            <p className="text-white text-lg font-ubuntu text-justify text-opacity-80 ">
+            <p className="text-white text-xl font-ubuntu text-justify text-opacity-80 ">
               I have always been able to solve problems in front end
               development. For example there is a specific styling that I would
               like to have, I have always been able to implement it using my
@@ -255,11 +265,23 @@ export default function Main() {
               <text className="text-white text-2xl font-bold xl:mt-[80px] ">
                 Tech Stacks
               </text>
-              <div className="flex flex-row xl:mt-5  w-full xsm:mt-5 justify-between bg-black text-lg">
+              <div className="flex flex-row xl:mt-5  w-full xsm:mt-5 justify-between bg-black text-xl">
                 <div className="space-y-5">
                   <div className="flex flex-row ">
                     <Play />
-                    <text>JavaScript</text>
+                    <text>Python</text>
+                  </div>
+                  <div className="flex flex-row ">
+                    <Play />
+                    <text>Pandas</text>
+                  </div>
+                  <div className="flex flex-row">
+                    <Play />
+                    <text>Tableau</text>
+                  </div>
+                  <div className="flex flex-row">
+                    <Play />
+                    <text>R</text>
                   </div>
 
                   <div className="flex flex-row">
@@ -268,13 +290,17 @@ export default function Main() {
                   </div>
                   <div className="flex flex-row">
                     <Play />
-                    <text>Python</text>
+                    <text>JavaScript</text>
                   </div>
                   <div className="flex flex-row">
                     <Play />
                     <text>Supabase</text>
                   </div>
-                  <div className="flex flex-row">
+                  
+                  
+                </div>
+                <div className="flex flex-col space-y-5">
+                <div className="flex flex-row">
                     <Play />
                     <text>React Native</text>
                   </div>
@@ -282,8 +308,6 @@ export default function Main() {
                     <Play />
                     <text>React JS</text>
                   </div>
-                </div>
-                <div className="flex flex-col space-y-5">
                   <div className="flex flex-row">
                     <Play />
                     <text>HTML</text>
@@ -322,7 +346,7 @@ export default function Main() {
         </text>
         <div className="sxl:grid grid-cols-2 xsm:flex flex-col">
           <div className="flex flex-col xsm:[300px] xl:w-[480px]  sxl:w-[430px]">
-            <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
+            <p className="text-white mt-5 text-xl font-ubuntu text-justify text-opacity-80 ">
               I just entered NUSSU CommIT Technical Team Member in September,
               2023. I performed here as an experienced frontend developer that
               is tasked to design NUSSU websites. We also have workshops every
@@ -339,7 +363,7 @@ export default function Main() {
         </text>
         <div className="sxl:grid grid-cols-2 xsm:flex flex-col ">
           <div className="flex flex-col xsm:[300px] xl:w-[480px] sxl:w-[430px]">
-            <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
+            <p className="text-white mt-5 text-xl font-ubuntu text-justify text-opacity-80 ">
               NUANSA is an esteemed Indonesian drama musical theater production
               at the National University of Singapore (NUS). Before the COVID19
               Pandemic, NUANSA had always been operating in the University
@@ -363,7 +387,7 @@ export default function Main() {
         </text>
         <div className="sxl:grid grid-cols-2 xsm:flex flex-col">
           <div className="flex flex-col xsm:[300px] xl:w-[480px] sxl:w-[430px]">
-            <p className="text-white mt-5 text-lg font-ubuntu text-justify text-opacity-80 ">
+            <p className="text-white mt-5 text-xl font-ubuntu text-justify text-opacity-80 ">
               During summer, I did my very first internship in Indonesia which
               is in PT Catur Kimiatama Agung. It is a company that operates with
               paint and powders I had an incredible experience of talking to my
@@ -390,7 +414,7 @@ export default function Main() {
         ref={project}
         className="text-white/90 xmd:mx-[60px] font-bold text-3xl xl:my-10 xsm:my-5 xl:mx-32 xsm:mx-10 font-ubuntu sxl:mx-20"
       >
-        Projects
+        Projects and HACKathons/STARTathons
       </text>
       <div className="sxl:grid grid-cols-3 xmd:mx-[60px] xl:h-[1000px] sxl:gap-5 xl:gap-7 xsm:flex flex-col m-5 xsm:space-y-10 sxl:space-y-0 items-center xsm:mx-10 xl:mx-32 sxl:mx-20">
         {data.map((product, index) => (
