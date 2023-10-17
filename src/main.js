@@ -39,7 +39,7 @@ export default function Main() {
       name: "SMETRICS Catalyst X AI",
       photo: catalyst,
       link: "https://drive.google.com/file/d/1LzQFyN9avAAjF9OM2MoCwlGU51vbJgDk/view?usp=sharing",
-      desc: "As a team, we proposed an idea address climate change by tackling down carbon emissions by SMEs in Indonesia. We gather data from MNCs and Sustainability Reports to be used as our training data for our AI model. We use the technique of Transfer Learning to do predictive analytics upon carbon emission and prescripive analytics on recommendations",
+      desc: "As a team, we proposed an idea to address climate change by tackling down carbon emissions by SMEs in Indonesia. We gather data from MNCs and Sustainability Reports to be used as our training data for our AI model. We use the technique of Transfer Learning to do predictive analytics upon carbon emission and prescriptive analytics on recommendations",
     },
 
 
