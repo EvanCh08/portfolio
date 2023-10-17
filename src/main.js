@@ -250,10 +250,9 @@ export default function Main() {
               Strength and Weakness
             </text>
             <p className="text-white text-xl font-ubuntu text-justify text-opacity-80 ">
-              I have always been able to solve problems in front end
-              development. For example there is a specific styling that I would
-              like to have, I have always been able to implement it using my
-              very own solutions. If I were to define one of my weaknesses, I
+             My strength is to be able to work with other people well, such that our group is able to 
+             achieve our main goal. I also have the ability to manage and organize group work, such that everyone can work well and contribute to the project. 
+            For my weakness, I
               would say that I can have a sudden anxiety, to speak in front of
               many people. I have tried to transform it into my strength
               instead, by taking a public speaking course in my university. Now,
@@ -450,7 +449,7 @@ export default function Main() {
         ))}
       </div>
 
-      <div className="mx-32 xsm:my-3 xl:mt-[400px] ">
+      <div className="mx-32 xsm:my-3 xl:mt-[450px] ">
         <text className="text-white xsm:flex justify-center xl:self-end font-ubuntu font-bold text-3xl">
           Social
         </text>
